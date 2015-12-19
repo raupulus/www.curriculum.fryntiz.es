@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+BODY {
+	width: 1024px;
+	margin: auto;
+	background-color: red;
+}
+
+HEADER H1 {
+	font-size: 4em;
+	text-align: center;
+}
+
+NAV UL {
+	width: 100%;
+	background-color: black;
+	align-content: center;
+	text-align: center;
+}
+
+NAV UL LI {
+	width: 120px;
+	list-style: none;
+	display: inline-block;
+	color: red;
+	font-size: 1.2em;
+	background-color: skyblue;
+}
+
+#contenidoweb {
+	display: flex;
+	flex-direction: row;
+	background-color: orange;
+}
+
+SECTION {
+	flex: 3;
+	margin: 15px 5px 0 0;
+	background-color: yellowgreen;
+}
+
+SECTION H2 {
+	padding: 5px;
+	margin-bottom: 5px;
+	font-size: 3em;
+	text-align: center;
+	background-color: yellow;
+}
+
+SECTION H3 {
+	padding: 8px;
+	margin: 5px 0;
+	text-align: right;
+	color: orange;
+	background-color: black;
+}
+
+ASIDE {
+	flex: 1;
+	margin: 15px 0 0 5px;
+	padding: 10px;
+	background-color: dimgray;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	vertical-align: middle;
+}
+
+FOOTER {
+	margin-bottom: 25px;
+	padding: 25px 15px;
+	background-color: aqua;
+}

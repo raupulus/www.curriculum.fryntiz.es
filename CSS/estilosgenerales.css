@@ -4,14 +4,29 @@
 }
 
 BODY {
-	width: 1024px;
 	margin: auto;
 	background-color: red;
+}
+
+@media screen and (max-width:1023px) {
+BODY {
+	width: 600px;
+	}
+}
+
+@media screen and (min-width:1024px) {
+BODY {
+	width: 1024px;
+	}
 }
 
 HEADER H1 {
 	font-size: 4em;
 	text-align: center;
+}
+
+HEADER IMG {
+	width: 100%;
 }
 
 NAV UL {
@@ -67,6 +82,10 @@ ASIDE {
 	align-items: center;
 	text-align: center;
 	vertical-align: middle;
+}
+
+ASIDE IMG {
+	width: 100%;
 }
 
 FOOTER {

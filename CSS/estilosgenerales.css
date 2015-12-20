@@ -59,11 +59,26 @@ NAV UL {
 
 NAV UL LI {
 	width: 116px;
+	height: 25px;
+	padding: 7px 0 2px 0;
 	list-style: none;
 	display: inline-block;
-	color: red;
+	color: whitesmoke;
 	font-size: 16px;
+	align-content: center;
+	align-items: center;
+	vertical-align: middle;
 	background-color: skyblue;
+	border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-o-border-radius: 10px 10px 0 0;
+	-ms-border-radius: 10px 10px 0 0;
+	text-shadow: 4px 1px 3px black;
+	-moz-text-shadow: 4px 1px 3px black;
+	-webkit-text-shadow: 4px 1px 3px black;
+	-o-text-shadow: 4px 1px 3px black;
+	-ms-text-shadow: 4px 1px 3px black;
 }
 
 NAV UL LI:hover {
@@ -72,6 +87,7 @@ NAV UL LI:hover {
 }
 
 #paginicio #toinicio, #pagcv #tocv, #pagcvext #tocvext, #pagdescargas #todescargas, #pagcontacto #tocontacto {
+	color: black;
 	background-color: whitesmoke;
 }
 

@@ -12,11 +12,32 @@ BODY {
 BODY {
 	width: 600px;
 	}
+#contenidoweb {
+	display: block;
+	}
+SECTION {
+	margin: 0;
+	}
+ASIDE {
+	margin: 0;
+	}
 }
 
 @media screen and (min-width:1024px) {
 BODY {
 	width: 1024px;
+	}
+#contenidoweb {
+	display: flex;
+	flex-direction: row;
+	}
+SECTION {
+	flex: 3;
+	margin: 0 5px 0 0;
+	}
+ASIDE {
+	flex: 1;
+	margin: 0 0 0 5px;
 	}
 }
 
@@ -37,23 +58,30 @@ NAV UL {
 }
 
 NAV UL LI {
-	width: 120px;
+	width: 116px;
 	list-style: none;
 	display: inline-block;
 	color: red;
-	font-size: 1.2em;
+	font-size: 16px;
 	background-color: skyblue;
 }
 
+NAV UL LI:hover {
+	cursor: pointer;
+	background-color: dodgerblue;
+}
+
+#paginicio #toinicio, #pagcv #tocv, #pagcvext #tocvext, #pagdescargas #todescargas, #pagcontacto #tocontacto {
+	background-color: whitesmoke;
+}
+
 #contenidoweb {
-	display: flex;
-	flex-direction: row;
-	background-color: orange;
+	padding: 15px 0 0 0;
+	background-color: whitesmoke;
 }
 
 SECTION {
-	flex: 3;
-	margin: 15px 5px 0 0;
+	padding: 15px 0;
 	background-color: yellowgreen;
 }
 
@@ -74,8 +102,6 @@ SECTION H3 {
 }
 
 ASIDE {
-	flex: 1;
-	margin: 15px 0 0 5px;
 	padding: 10px;
 	background-color: dimgray;
 	align-content: center;

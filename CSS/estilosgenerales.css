@@ -141,9 +141,20 @@ FOOTER {
 }
 
 #mostrarwebs IMG {
-	border-bottom: 5px inset red;
+	border-bottom: 5px inset orange;
+}
+
+#mostrarwebs A {
+	text-decoration: none;
 }
 
 #mostrarwebs P {
-	font-size: 1.2em;
+	color: orange;
+	font-size: 0.8em;
+}
+
+#mostrarwebs H1 {
+	background-color: black;
+	font-size: 0.9em;
+	color: red;
 }

@@ -61,13 +61,22 @@ function slideWeb() {
 //Descripción 3
 		"<H1>Página web 3</H1><BR/><P>Descripción de la página web 3</P>"
 	);
-
+	var sourcesSitiosWeb = document.getElementById("sourcesSitiosWeb");
+	var cambioSourcesSitiosWeb = new Array(
+	//Enlace 1
+		"#",
+	//Enlace 2
+		"#",
+	//Enlace 3
+		"#"
+	);
 
 	if (slideWebActual == LongitudArrayImaganesSitiosWebs) {
 				slideWebActual = 0;
 			}
 	imgWebs.src = ArrayImaganesSitiosWebs[slideWebActual];
 	descripcionImgWebs.innerHTML = cambioDescripcionImgWebs[slideWebActual];
+	sourcesSitiosWeb.href = cambioSourcesSitiosWeb[slideWebActual];
 	++slideWebActual;
 	//alert(cambioDescripcionImgWebs[slideWebActual]);
 }

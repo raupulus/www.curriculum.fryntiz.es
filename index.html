@@ -5,13 +5,19 @@
 		<TITLE>Curriculum Personal</TITLE>
 		<LINK rel="shortcut icon" href="./images/favicon.png"/>
 		<LINK rel="stylesheet" href="./CSS/estilosgenerales.css"/>
+		<SCRIPT src="JS/scriptsgenerales.js"></SCRIPT>
+		<SCRIPT>
+			window.onload = function () {
+				setInterval(selectSlide, 3000);
+			}
+		</SCRIPT>
 	</HEAD>
 
 	<BODY id="paginicio">
 		<HEADER>
 			<H1>Curriculum WEB</H1>
 			<DIV><!--Slide con pase de imágenes-->
-				<IMG src="images/1024px/SlideHeadx.jpg" alt="Descripción"/>
+				<IMG id="imghead" src="images/1024px/SlideHead1.jpg" alt="Descripción"/>
 			</DIV>
 		</HEADER>
 
@@ -19,7 +25,7 @@
 			<UL>
 				<A href="#"><LI id="toinicio">INICIO</LI></A>
 				<A href="#"><LI id="tocv">C.V.</LI></A>
-				<A href="#"><LI id="tocvext">C.V. ++</LI></A>
+				<A href="#" onClick="comprobar()"><LI id="tocvext">C.V. ++</LI></A>
 				<A href="#"><LI id="todescargas">Descargar</LI></A>
 				<A href="#"><LI id="tocontacto">Contacto</LI></A>
 			</UL>
@@ -91,6 +97,7 @@
 		<FOOTER>
 			<ADDRESS>
 				Nombre y correo del autor
+				<BR/>
 				Raúl Caro Pastorino - "fryntiz"
 				<BR/>
 				fryntiz@gmail.com

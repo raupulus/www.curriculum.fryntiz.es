@@ -1,11 +1,25 @@
+@font-face {
+	font-family: "abagail";
+	src: url("TTF/Abagail.ttf");
+}
+@font-face {
+	font-family: "sports";
+	src: url("TTF/SportsWorld.otf");
+}
+@font-face {
+	font-family: "tusj";
+	src: url("TTF/Tusj.ttf");
+}
+
 * {
 	margin: 0;
 	padding: 0;
+	font-family: abagail, monospace, serif, sans-serif;
 }
 
 BODY {
 	margin: auto;
-	background-color: red;
+	background-color: orangered;
 }
 
 @media screen and (max-width:1023px) {
@@ -46,7 +60,13 @@ ASIDE {
 
 HEADER H1 {
 	font-size: 4em;
+	font-family: abagail,monospace, serif, sans-serif;
 	text-align: center;
+	text-shadow: 10px 10px 10px black;
+	-moz-text-shadow: 10px 10px 10px black;
+	-webkit-text-shadow: 10px 10px 10px black;
+	-o-text-shadow: 10px 10px 10px black;
+	-ms-text-shadow: 10px 10px 10px black;
 }
 
 HEADER IMG {
@@ -66,7 +86,8 @@ NAV UL LI {
 	list-style: none;
 	display: inline-block;
 	color: whitesmoke;
-	font-size: 16px;
+	font-size: 17px;
+	font-family: sports,monospace, serif, sans-serif;
 	align-content: center;
 	align-items: center;
 	vertical-align: middle;
@@ -85,6 +106,7 @@ NAV UL LI {
 
 NAV UL LI:hover {
 	cursor: pointer;
+	color: black;
 	background-color: skyblue;
 }
 
@@ -117,18 +139,38 @@ SECTION {
 
 SECTION H2 {
 	padding: 5px;
-	margin-bottom: 5px;
+	margin: 0 15px 5px 0;
 	font-size: 3em;
 	text-align: center;
-	background-color: yellow;
+	color: white;
+	background-color: black;
+	border: 2px solid green;
+	border-radius: 0 15px 15px 0;
+	-moz-border-radius: 0 15px 15px 0;
+	-webkit-border-radius: 0 15px 15px 0;
+	-o-border-radius: 0 15px 15px 0;
+	-ms-border-radius: 0 15px 15px 0;
+	box-shadow: 10px 5px 15px black;
 }
 
 SECTION H3 {
 	padding: 8px;
-	margin: 5px 0;
+	margin: 5px 0 3px 10px;
 	text-align: right;
-	color: orange;
-	background-color: black;
+	color: skyblue;
+	background-color: dodgerblue;
+	border-radius: 15px 0 0 15px;
+	border: 1px solid skyblue;
+	box-shadow: -10px 5px 15px black;
+	-webkit-box-shadow: -10px 5px 15px black;
+	-moz-box-shadow: -10px 5px 15px black;
+	-o-box-shadow: -10px 5px 15px black;
+	-ms-box-shadow: -10px 5px 15px black;
+}
+
+SECTION P {
+	margin: 0 0 0 8px;
+	text-align: justify;
 }
 
 ASIDE {
@@ -142,13 +184,6 @@ ASIDE {
 
 ASIDE IMG {
 	width: 100%;
-}
-
-FOOTER {
-	margin-bottom: 25px;
-	padding: 25px 15px;
-	color: orange;
-	background-color: black;
 }
 
 #mostrarwebs {
@@ -167,10 +202,29 @@ FOOTER {
 #mostrarwebs P {
 	color: orange;
 	font-size: 0.8em;
+	font-family: monospace, serif, sans-serif;
+	text-align: justify;
 }
 
 #mostrarwebs H1 {
 	background-color: black;
 	font-size: 0.9em;
+	font-family: monospace, serif, sans-serif;
 	color: red;
+}
+
+FOOTER {
+	width: 80%;
+	margin: 25px auto;
+	padding: 25px 15px;
+	background-color: white;
+	border-radius: 20px;
+	border: 4px solid skyblue;
+}
+
+FOOTER ADDRESS {
+	color: dimgray;
+	font-size: 1.6em;
+	font-family: tusj, monospace, serif, sans-serif;
+	text-align: center;
 }

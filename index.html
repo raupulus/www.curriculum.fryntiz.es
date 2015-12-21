@@ -8,6 +8,8 @@
 		<SCRIPT src="JS/scriptsgenerales.js"></SCRIPT>
 		<SCRIPT>
 			window.onload = function () {
+				selectSlide();
+				slideWeb();
 				setInterval(selectSlide, 3000);
 				setInterval(slideWeb, 8000);
 			}
@@ -62,11 +64,13 @@
 			<ASIDE><!--Sección lateral Derecha-->
 				<DIV>
 					<DIV id="mostrarwebs">
-						<A id="sourcesSitiosWeb" href="#"><IMG id="imgWebs" src="images/webs/x.jpg" alt="Descripción"/></A>
+						<A id="sourcesSitiosWeb" href="#">
+							<IMG id="imgWebs" src="images/webs/x.jpg" alt="Descripción"/>
 
-						<P id="descripcionImgWebs"><!--Caja con descripción de la imagen actual-->
-							Esta página WEB contiene.... Trata.... dedicada a....
-						</P>
+							<P id="descripcionImgWebs"><!--Caja con descripción de la imagen actual-->
+								Esta página WEB contiene.... Trata.... dedicada a....
+							</P>
+						</A>
 					</DIV>
 				</DIV>
 			</ASIDE>

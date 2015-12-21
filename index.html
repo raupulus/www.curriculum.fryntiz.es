@@ -9,6 +9,7 @@
 		<SCRIPT>
 			window.onload = function () {
 				setInterval(selectSlide, 3000);
+				setInterval(slideWeb, 8000);
 			}
 		</SCRIPT>
 	</HEAD>
@@ -25,7 +26,7 @@
 			<UL>
 				<A href="#"><LI id="toinicio">INICIO</LI></A>
 				<A href="#"><LI id="tocv">C.V.</LI></A>
-				<A href="#" onClick="comprobar()"><LI id="tocvext">C.V. ++</LI></A>
+				<A href="#" onClick="slideWeb()"><LI id="tocvext">C.V. ++</LI></A>
 				<A href="#"><LI id="todescargas">Descargar</LI></A>
 				<A href="#"><LI id="tocontacto">Contacto</LI></A>
 			</UL>
@@ -61,9 +62,9 @@
 			<ASIDE><!--Sección lateral Derecha-->
 				<DIV>
 					<DIV id="mostrarwebs">
-						<A href="#"><IMG src="images/webs/x.jpg" alt="Descripción"/></A>
+						<A id="sourcesSitiosWeb" href="#"><IMG id="imgWebs" src="images/webs/x.jpg" alt="Descripción"/></A>
 
-						<P id="imgwebrealizada1"><!--Caja con descripción de la imagen actual-->
+						<P id="descripcionImgWebs"><!--Caja con descripción de la imagen actual-->
 							Esta página WEB contiene.... Trata.... dedicada a....
 						</P>
 					</DIV>

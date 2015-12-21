@@ -31,12 +31,15 @@ BODY {
 	display: flex;
 	flex-direction: row;
 	}
+#anillas {
+	flex: 1;
+	}
 SECTION {
-	flex: 3;
+	flex: 13;
 	margin: 0 5px 0 0;
 	}
 ASIDE {
-	flex: 1;
+	flex: 4;
 	margin: 0 0 0 5px;
 	}
 }
@@ -67,7 +70,7 @@ NAV UL LI {
 	align-content: center;
 	align-items: center;
 	vertical-align: middle;
-	background-color: skyblue;
+	background-color: dodgerblue;
 	border-radius: 10px 10px 0 0;
 	-moz-border-radius: 10px 10px 0 0;
 	-webkit-border-radius: 10px 10px 0 0;
@@ -82,22 +85,34 @@ NAV UL LI {
 
 NAV UL LI:hover {
 	cursor: pointer;
-	background-color: dodgerblue;
+	background-color: skyblue;
 }
 
 #paginicio #toinicio, #pagcv #tocv, #pagcvext #tocvext, #pagdescargas #todescargas, #pagcontacto #tocontacto {
 	color: black;
-	background-color: whitesmoke;
+	background-color: skyblue;
 }
 
 #contenidoweb {
-	padding: 15px 0 0 0;
-	background-color: whitesmoke;
+	margin: 0 0 10px 0;
+	padding: 15px 0;
+	background-color: skyblue;
+}
+
+#anillas {
+	background-image: url("images/anillas.png");
+	background-repeat: repeat-y;
+	background-size: contain;
 }
 
 SECTION {
 	padding: 15px 0;
-	background-color: yellowgreen;
+	background-color: whitesmoke;
+	border-radius: 0 15px 15px 0;
+	-moz-border-radius: 0 15px 15px 0;
+	-webkit-border-radius: 0 15px 15px 0;
+	-o-border-radius: 0 15px 15px 0;
+	-ms-border-radius: 0 15px 15px 0;
 }
 
 SECTION H2 {
@@ -132,7 +147,8 @@ ASIDE IMG {
 FOOTER {
 	margin-bottom: 25px;
 	padding: 25px 15px;
-	background-color: aqua;
+	color: orange;
+	background-color: black;
 }
 
 #mostrarwebs {

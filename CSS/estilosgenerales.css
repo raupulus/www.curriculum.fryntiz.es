@@ -134,3 +134,16 @@ FOOTER {
 	padding: 25px 15px;
 	background-color: aqua;
 }
+
+#mostrarwebs {
+	border: 4px inset black;
+	background-color: white;
+}
+
+#mostrarwebs IMG {
+	border-bottom: 5px inset red;
+}
+
+#mostrarwebs P {
+	font-size: 1.2em;
+}

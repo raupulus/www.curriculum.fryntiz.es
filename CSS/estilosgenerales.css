@@ -155,7 +155,7 @@ SECTION H2 {
 
 SECTION H3 {
 	padding: 8px;
-	margin: 5px 0 3px 10px;
+	margin: 5px 0 3px 30px;
 	text-align: right;
 	color: skyblue;
 	background-color: dodgerblue;
@@ -169,7 +169,7 @@ SECTION H3 {
 }
 
 SECTION P {
-	margin: 0 0 0 8px;
+	margin: 15px;
 	text-align: justify;
 }
 
@@ -211,6 +211,31 @@ ASIDE IMG {
 	font-size: 0.9em;
 	font-family: monospace, serif, sans-serif;
 	color: red;
+}
+
+#cajaredes {
+	width: 100%;
+}
+
+#cajaredes DIV {
+	width: 65px;
+	height: 65px;
+	margin: 20px 0;
+	display: inline-block;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#googleplus {
+	background-image: url("images/googleplus.png");
+}
+
+#facebook {
+	background-image: url("images/facebook.png");
+}
+
+#twitter {
+	background-image: url("images/twitter.png");
 }
 
 FOOTER {

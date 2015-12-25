@@ -122,7 +122,7 @@ NAV UL LI:hover {
 }
 
 #anillas {
-	background-image: url("images/anillas.png");
+	background-image: url("../images/anillas.png");
 	background-repeat: repeat-y;
 	background-size: contain;
 }
@@ -227,15 +227,15 @@ ASIDE IMG {
 }
 
 #googleplus {
-	background-image: url("images/googleplus.png");
+	background-image: url("../images/googleplus.png");
 }
 
 #facebook {
-	background-image: url("images/facebook.png");
+	background-image: url("../images/facebook.png");
 }
 
 #twitter {
-	background-image: url("images/twitter.png");
+	background-image: url("../images/twitter.png");
 }
 
 FOOTER {

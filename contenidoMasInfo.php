@@ -143,7 +143,7 @@
 					</HEADER>
 
 					<HEADER>
-						<H3>Blogero</H3>
+						<H3>Bloguero</H3>
 					</HEADER>
 
 					<P>

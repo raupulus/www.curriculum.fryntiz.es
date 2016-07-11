@@ -1,0 +1,19 @@
+/*
+----------------------------------
+Tamaño menor de 600
+----------------------------------
+*/
+@media screen and (max-width:600px) {
+BODY {
+	max-width: 600px;
+	}
+#contenidoweb {
+	display: block;
+	}
+SECTION {
+	margin: 0;
+	}
+ASIDE {
+	margin: 0;
+	}
+}

@@ -1,7 +1,11 @@
+/*
+------------------------------------------------
+Slide Superior
+------------------------------------------------
+*/
 //Array con las imágenes para pantallas grandes/alta resolución
 var imagenesHeadHigh = new Array("./images/1024px/SlideHead1.jpg", "./images/1024px/SlideHead2.jpg", "./images/1024px/SlideHead3.jpg");
 var longitudImagenesHeadHigh = imagenesHeadHigh.length;
-
 //Array con las imágenes para pantallas pequeñas/baja resolución
 var imagenesHeadSmall = new Array("./images/600px/SlideHead1.jpg", "./images/600px/SlideHead2.jpg", "./images/600px/SlideHead3.jpg");
 var longitudImagenesHeadSmall = imagenesHeadSmall.length;
@@ -9,7 +13,7 @@ var longitudImagenesHeadSmall = imagenesHeadSmall.length;
 //Elegir tipo de imagen según tamaño de navegador
 function selectSlide() {
 	var tamañoPantalla = window.outerWidth;
-	if (tamañoPantalla > 1024) {
+	if (tamañoPantalla > 1000) {
 		SlideAutomaticoHigh();
 	} else {
 		SlideAutomaticoSmall();
@@ -25,7 +29,6 @@ function SlideAutomaticoHigh() {
 			}
 	imgHead.src = imagenesHeadHigh[imagenHeadActual];
 	++imagenHeadActual;
-	//alert("X tiene valor " + x + "Y tiene valor " + y);
 }
 //Función para el cambio automático del Slide Show Baja resolución
 function SlideAutomaticoSmall() {
@@ -37,7 +40,6 @@ function SlideAutomaticoSmall() {
 	++imagenHeadActual;
 	//alert("X tiene valor " + x + "Y tiene valor " + y);
 }
-
 //Función para hacer pausa, al estilo "sleep" de otros lenguajes
 function sleep(milliSeconds) {
 	// Obtenemos la fecha en milisegundos desde 1/1/1970
@@ -46,10 +48,16 @@ function sleep(milliSeconds) {
 	while (new Date().getTime() < startTime + milliSeconds);
 }
 
+/*
+------------------------------------------------
+Slide lateral
+------------------------------------------------
+*/
 //Sección lateral Derecha para Sitios Webs
 var ArrayImaganesSitiosWebs = new Array("./images/webs/1.jpg", "./images/webs/2.jpg", "./images/webs/3.jpg");
 var LongitudArrayImaganesSitiosWebs = ArrayImaganesSitiosWebs.length;
 var slideWebActual = "0";
+var ratonEncima = false;//añadiendo que al pasar el ratón se pause
 function slideWeb() {
 	var imgWebs = document.getElementById("imgWebs");
 	var descripcionImgWebs = document.getElementById("descripcionImgWebs");
@@ -70,7 +78,6 @@ function slideWeb() {
 	//Enlace 3
 		"#"
 	);
-
 	if (slideWebActual == LongitudArrayImaganesSitiosWebs) {
 				slideWebActual = 0;
 			}
@@ -78,5 +85,4 @@ function slideWeb() {
 	descripcionImgWebs.innerHTML = cambioDescripcionImgWebs[slideWebActual];
 	sourcesSitiosWeb.href = cambioSourcesSitiosWeb[slideWebActual];
 	++slideWebActual;
-	//alert(cambioDescripcionImgWebs[slideWebActual]);
 }

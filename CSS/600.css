@@ -17,3 +17,16 @@ ASIDE {
 	margin: 0;
 	}
 }
+
+/*
+----------------------------------
+CONTENIDO
+----------------------------------
+*/
+
+.cajaTitulo H2 {
+	font-size: 2.2em;
+}
+.cajaTitulo P {
+	font-size: 1.8em;
+}

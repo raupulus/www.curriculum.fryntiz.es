@@ -61,7 +61,7 @@ Tamaño entre 601 y 1000
 	}
 	#menuprincipal IMG {
 		position: absolute;
-		left: 30%;
+		left: 0;
 		top -28px;
 		width: 50px;
 		height: 50px;
@@ -85,6 +85,7 @@ Tamaño entre 601 y 1000
 	}
 	#menuprincipal #mostrarMenu IMG {
 		position: absolute;
+		left: 0;
 		top: 5px;
 	}
 	#menuprincipal #mostrarMenu:hover {
@@ -160,21 +161,45 @@ Tamaño entre 601 y 1000
 		border: none;
 	}
 	#contenidoweb SECTION {
-	margin: 0;
-	border-radius: 0;
-	-moz-border-radius: 0;
-	-webkit-border-radius: 0;
-	-o-border-radius: 0;
-	-ms-border-radius: 0;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	-o-box-shadow: none;
-	-ms-box-shadow: none;
-}
+		margin: 0;
+		border-radius: 0;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		-o-border-radius: 0;
+		-ms-border-radius: 0;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		-o-box-shadow: none;
+		-ms-box-shadow: none;
+	}
 	#contenidoAnillasSuperior {
-	display: block;
-}
+		display: block;
+	}
+	.tablaRemarcada TH {
+		font-size: 1.8em;
+	}
+	.cajaTitulo H2 {
+	font-size: 2.2em;
+	}
+	.cajaTitulo P {
+		font-size: 1.8em;
+	}
+	.cajaTitulo LI {
+		font-size: 2em;
+	}
+	.cajaTituloDeArticulo {
+		font-size: 2em;
+	}
+	SECTION H3 {
+		font-size: 1.8em;
+	}
+	SECTION ARTICLE P,  SECTION ARTICLE UL{
+		font-size: 1.6em !important;
+	}
+	TABLE TD {
+		font-size: 2em;
+	}
 	/*
 	----------------------------------
 	MENÚ DERECHA
@@ -182,5 +207,11 @@ Tamaño entre 601 y 1000
 	*/
 	#menuderecha {
 		margin: 0;
+	}
+	#descripcionImgWebs H1 {
+		font-size: 2em;
+	}
+	#descripcionImgWebs P {
+		font-size: 1.8em;
 	}
 }

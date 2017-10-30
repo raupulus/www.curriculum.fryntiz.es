@@ -4,11 +4,11 @@ header('Content-Type: text/html; charset=UTF-8');
 error_reporting( E_ALL & ~( E_NOTICE | E_STRICT | E_DEPRECATED ) ); //Aquí se genera un control de errores "NO BORRAR NI SUSTITUIR"
 require_once "Mail.php"; //Aquí se llama a la función mail "NO BORRAR NI SUSTITUIR"
 
-$to = 'fryntiz@gmail.com'; //Aquí definimos quien recibirá el formulario
-$from = 'fryntiz@gmail.com'; //Aquí definimos que cuenta mandará el correo, generalmente perteneciente al mismo dominio
+$to = 'usuario@gmail.com'; //Aquí definimos quien recibirá el formulario
+$from = 'usuario@gmail.com'; //Aquí definimos que cuenta mandará el correo, generalmente perteneciente al mismo dominio
 $host = 'smtp.gmail.com'; //Aquí definimos cual es el servidor de correo saliente desde el que se enviaran los correos
-$username = 'fryntiz@gmail.com'; //Aqui se define el usuario de la cuenta de correo, en hostalia separado con punto en vez de @
-$password = 'cibmiulziomrkyqx'; //Aquí se define la contraseña de la cuenta de correo que enviará el mensaje
+$username = 'usuario@gmail.com'; //Aqui se define el usuario de la cuenta de correo, en hostalia separado con punto en vez de @
+$password = 'PASSWORD'; //Aquí se define la contraseña de la cuenta de correo que enviará el mensaje
 $subject = 'Contacto desde la página web Curriculum Fryntiz'; //Aquí se define el asunto del correo
 $port = '587'; //Definido el puerto que utilizará
 

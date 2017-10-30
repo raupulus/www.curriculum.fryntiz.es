@@ -38,11 +38,13 @@
 								<TD>Listado de repositorios GIT con los proyectos propios y en los que colaboro</TD>
 								<TD><A href="descargar/RepositoriosGIT.pdf" download="Repositorios_GIT.pdf" title="Descargar listado repositorio GIT Fryntiz"><IMG src="./images/iconos/FlechaDescargar.png" alt="Descargar"/></A></TD>
 							</TR>
+<!--
 							<TR>
 								<TD>Catálogo de precios</TD>
 								<TD>Catálogo con los precios aproximados si deseas contratar mis servicios</TD>
 								<TD><A href="descargar/ListadoTarifas.pdf" download="Listado_de_Tarifas.pdf" title="Descargar listado repositorio GIT Fryntiz"><IMG src="./images/iconos/FlechaDescargar.png" alt="Descargar"/></A></TD>
 							</TR>
+-->
 						</TABLE>
 					</P>
 				</ARTICLE>

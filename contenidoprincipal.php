@@ -20,7 +20,7 @@
 					</HEADER>
 
 					<P>
-						Esta página web está creada para mostrar mi <STRONG>curriculum</STRONG>, aptitutudes y conocimientos en el campo de la informática en general y la programación de aplicaciones WEB en especial.
+						Esta página web está creada para mostrar mi <STRONG>curriculum</STRONG>, aptitudes y conocimientos en el campo de la informática en general y la programación de aplicaciones WEB en especial.
 					</P>
 				</ARTICLE>
 

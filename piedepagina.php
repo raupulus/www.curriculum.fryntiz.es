@@ -2,6 +2,6 @@
 			<ADDRESS>
 				Raúl Caro Pastorino, alias "fryntiz"
 				<BR/>
-				<A href="mailto:fryntiz@gmail.com" title="Correo electrónico de Fryntiz">fryntiz@gmail.com</A>
+				<A href="mailto:tecnico@fryntiz.es" title="Correo electrónico de Fryntiz">tecnico@fryntiz.es</A>
 			</ADDRESS>
 		</FOOTER>

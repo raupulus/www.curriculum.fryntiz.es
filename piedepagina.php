@@ -1,4 +1,4 @@
-    <FOOTER id="piedepagina">
+        <FOOTER id="piedepagina">
             <ADDRESS>
                 Raúl Caro Pastorino, alias "fryntiz"
                 <BR/>

@@ -4,12 +4,12 @@ Devolver valores a 1000
 ----------------------------------
 */
 @media screen and (min-width:1001px) {
-	#ulMenuMINI {
-		display: none;
-	}
-	#menuprincipal #ulMenuMINI LI {
-		display: none;
-	}
+    #ulMenuMINI {
+        display: none;
+    }
+    #menuprincipal #ulMenuMINI LI {
+        display: none;
+    }
 }
 /*
 ----------------------------------
@@ -17,201 +17,201 @@ Tamaño entre 601 y 1000
 ----------------------------------
 */
 @media screen and (max-width:1000px) {
-	/*
-	----------------------------------
-	GENERAL
-	----------------------------------
-	*/
-	BODY {
-		width: 100%;
-		background-image: none;
-	}
-	HEADER H1 {
-	font-size: 1.2em;
-	text-shadow: none;
-	-moz-text-shadow: none;
-	-webkit-text-shadow: none;
-	-o-text-shadow: none;
-	-ms-text-shadow: none;
+    /*
+    ----------------------------------
+    GENERAL
+    ----------------------------------
+    */
+    BODY {
+        width: 100%;
+        background-image: none;
+    }
+    HEADER H1 {
+    font-size: 1.2em;
+    text-shadow: none;
+    -moz-text-shadow: none;
+    -webkit-text-shadow: none;
+    -o-text-shadow: none;
+    -ms-text-shadow: none;
 }
-	/*
-	----------------------------------
-	TÍTULO
-	----------------------------------
-	*/
-	#cajaHead {
-		margin-top: 70px;
-	}
-	#cajaHead H1 {
-		border-radius: 0;
-		font-size: 2.4em;
-		background-image:url(../images/tableroX600.png);
-	}
-	/*
-	----------------------------------
-	MENÚ PRINCIPAL
-	----------------------------------
-	*/
-	#ulMenu {
-		height: 0;
-		display: none;
-	}
-	#menuprincipal #ulMenu {
-		display: none;
-	}
-	#menuprincipal IMG {
-		position: absolute;
-		left: 0;
-		top -28px;
-		width: 50px;
-		height: 50px;
-	}
-	#ulMenu LI {
-		display: none;
-	}
-	#ulMenu A {
-		display: none;
-	}
-	#ulMenuMINI {
-		display: block;
-	}
-	#menuprincipal {
-		height: 0;
-	}
-	#menuprincipal #mostrarMenu {
-		display: block;
-		padding-top: 10px;
-		letter-spacing: 10px;
-	}
-	#menuprincipal #mostrarMenu IMG {
-		position: absolute;
-		left: 0;
-		top: 5px;
-	}
-	#menuprincipal #mostrarMenu:hover {
+    /*
+    ----------------------------------
+    TÍTULO
+    ----------------------------------
+    */
+    #cajaHead {
+        margin-top: 70px;
+    }
+    #cajaHead H1 {
+        border-radius: 0;
+        font-size: 2.4em;
+        background-image:url(../images/tableroX600.png);
+    }
+    /*
+    ----------------------------------
+    MENÚ PRINCIPAL
+    ----------------------------------
+    */
+    #ulMenu {
+        height: 0;
+        display: none;
+    }
+    #menuprincipal #ulMenu {
+        display: none;
+    }
+    #menuprincipal IMG {
+        position: absolute;
+        left: 0;
+        top -28px;
+        width: 50px;
+        height: 50px;
+    }
+    #ulMenu LI {
+        display: none;
+    }
+    #ulMenu A {
+        display: none;
+    }
+    #ulMenuMINI {
+        display: block;
+    }
+    #menuprincipal {
+        height: 0;
+    }
+    #menuprincipal #mostrarMenu {
+        display: block;
+        padding-top: 10px;
+        letter-spacing: 10px;
+    }
+    #menuprincipal #mostrarMenu IMG {
+        position: absolute;
+        left: 0;
+        top: 5px;
+    }
+    #menuprincipal #mostrarMenu:hover {
 
-	}
-	#menuprincipal #ulMenuMINI {
-		position: absolute;
-		display: none;
-		width: 100%;
-		height: 500px;
-		z-index: 120;
-		background-color: transparent;
-		border: none;
-	}
-	#menuprincipal #ulMenuMINI LI {
-		width: 100%;
-		height: 60px;
-		padding-top: 30px;
-		margin: 0;
-		letter-spacing: 5px;
-		text-align: center;
-		vertical-align: middle;
-		align-content: center;
-		align-items: center;
-		font-size: 1.2em;
-		font-family: Destacado, monospace, serif, sans-serif;
-		color: white;
-		display: block;
-		font-size: 2em;
-		border-top: 5px solid black;
-		border-bottom: 5px solid black;
-		border-radius: 0;
-		text-shadow: none;
-		background-color: red;
-		background: red;
-	}
-	#menuprincipal #ulMenuMINI #cancelarmenu {
-		display: block;
-		height: 50px;
-		color: black;
-		background-color: yellow;
-		letter-spacing: 10px;
-	}
-	#menuprincipal #ulMenuMINI #cancelarmenu:hover {
-		color: yellow;
-		background-color: black;
-	}
-	#menuprincipal #ulMenuMINI LI:hover {
-		cursor: pointer;
-		color: #1386dc;
-		background-color: black;
-		background: black;
-	}
-	#menuprincipal #ulMenuMINI A {
-		text-decoration: none;
-	}
-	#paginicio #menuprincipal .toinicio, #pagcv #menuprincipal .tocv, #pagcvext #menuprincipal .tocvext, #pagdescargas #menuprincipal .todescargas, #pagcontacto #menuprincipal .tocontacto, #pagmasinfo #menuprincipal .tomasinfo {
-		color: black;
-		background-color: #1386dc;
-		background: #1386dc;
-	}
-	/*
-	----------------------------------
-	CONTENIDO
-	----------------------------------
-	*/
-	#contenidoweb {
-		display: block;
-		margin: 0;
-		width: 100%;
-	}
-	#contenidoweb SECTION ARTICLE H2 {
-		border: none;
-	}
-	#contenidoweb SECTION {
-		margin: 0;
-		border-radius: 0;
-		-moz-border-radius: 0;
-		-webkit-border-radius: 0;
-		-o-border-radius: 0;
-		-ms-border-radius: 0;
-		box-shadow: none;
-		-webkit-box-shadow: none;
-		-moz-box-shadow: none;
-		-o-box-shadow: none;
-		-ms-box-shadow: none;
-	}
-	#contenidoAnillasSuperior {
-		display: block;
-	}
-	.tablaRemarcada TH {
-		font-size: 1.8em;
-	}
-	.cajaTitulo H2 {
-	font-size: 2.2em;
-	}
-	.cajaTitulo P {
-		font-size: 1.8em;
-	}
-	.cajaTitulo LI {
-		font-size: 2em;
-	}
-	.cajaTituloDeArticulo {
-		font-size: 2em;
-	}
-	SECTION H3 {
-		font-size: 1.8em;
-	}
-	SECTION ARTICLE P,  SECTION ARTICLE UL{
-		font-size: 1.6em !important;
-	}
-	TABLE TD {
-		font-size: 2em;
-	}
-	/*
-	----------------------------------
-	MENÚ DERECHA
-	----------------------------------
-	*/
-	#menuderecha {
-		margin: 0;
-	}
-	#descripcionImgWebs H1 {
-		font-size: 2em;
-	}
-	#descripcionImgWebs P {
-		font-size: 1.8em;
-	}
+    }
+    #menuprincipal #ulMenuMINI {
+        position: absolute;
+        display: none;
+        width: 100%;
+        height: 500px;
+        z-index: 120;
+        background-color: transparent;
+        border: none;
+    }
+    #menuprincipal #ulMenuMINI LI {
+        width: 100%;
+        height: 60px;
+        padding-top: 30px;
+        margin: 0;
+        letter-spacing: 5px;
+        text-align: center;
+        vertical-align: middle;
+        align-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        font-family: Destacado, monospace, serif, sans-serif;
+        color: white;
+        display: block;
+        font-size: 2em;
+        border-top: 5px solid black;
+        border-bottom: 5px solid black;
+        border-radius: 0;
+        text-shadow: none;
+        background-color: red;
+        background: red;
+    }
+    #menuprincipal #ulMenuMINI #cancelarmenu {
+        display: block;
+        height: 50px;
+        color: black;
+        background-color: yellow;
+        letter-spacing: 10px;
+    }
+    #menuprincipal #ulMenuMINI #cancelarmenu:hover {
+        color: yellow;
+        background-color: black;
+    }
+    #menuprincipal #ulMenuMINI LI:hover {
+        cursor: pointer;
+        color: #1386dc;
+        background-color: black;
+        background: black;
+    }
+    #menuprincipal #ulMenuMINI A {
+        text-decoration: none;
+    }
+    #paginicio #menuprincipal .toinicio, #pagcv #menuprincipal .tocv, #pagcvext #menuprincipal .tocvext, #pagdescargas #menuprincipal .todescargas, #pagcontacto #menuprincipal .tocontacto, #pagmasinfo #menuprincipal .tomasinfo {
+        color: black;
+        background-color: #1386dc;
+        background: #1386dc;
+    }
+    /*
+    ----------------------------------
+    CONTENIDO
+    ----------------------------------
+    */
+    #contenidoweb {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+    #contenidoweb SECTION ARTICLE H2 {
+        border: none;
+    }
+    #contenidoweb SECTION {
+        margin: 0;
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        -o-border-radius: 0;
+        -ms-border-radius: 0;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -o-box-shadow: none;
+        -ms-box-shadow: none;
+    }
+    #contenidoAnillasSuperior {
+        display: block;
+    }
+    .tablaRemarcada TH {
+        font-size: 1.8em;
+    }
+    .cajaTitulo H2 {
+    font-size: 2.2em;
+    }
+    .cajaTitulo P {
+        font-size: 1.8em;
+    }
+    .cajaTitulo LI {
+        font-size: 2em;
+    }
+    .cajaTituloDeArticulo {
+        font-size: 2em;
+    }
+    SECTION H3 {
+        font-size: 1.8em;
+    }
+    SECTION ARTICLE P,  SECTION ARTICLE UL{
+        font-size: 1.6em !important;
+    }
+    TABLE TD {
+        font-size: 2em;
+    }
+    /*
+    ----------------------------------
+    MENÚ DERECHA
+    ----------------------------------
+    */
+    #menuderecha {
+        margin: 0;
+    }
+    #descripcionImgWebs H1 {
+        font-size: 2em;
+    }
+    #descripcionImgWebs P {
+        font-size: 1.8em;
+    }
 }

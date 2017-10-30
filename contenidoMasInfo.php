@@ -169,6 +169,7 @@
 					</P>
 				</ARTICLE>
 
+<!--
 				<ARTICLE>
 					<HEADER class="cajaTituloDeArticulo">
 						<H2 class="tituloDeArticulo">LIBROS RELACIONADOS QUE HE LEÍDO</H2>
@@ -199,6 +200,7 @@
 						ASD
 					</P>
 				</ARTICLE>
+-->
 
 				<ARTICLE>
 					<HEADER class="cajaTituloDeArticulo">
@@ -206,6 +208,7 @@
 						<P class="subtituloDeArticulo"></P>
 					</HEADER>
 
+<!--
 					<HEADER>
 						<H3>Fotografías de mi Estudio</H3>
 					</HEADER>
@@ -221,6 +224,7 @@
 					<P>
 						ASD
 					</P>
+-->
 
 					<HEADER>
 						<H3>Software con el que trabajo</H3>

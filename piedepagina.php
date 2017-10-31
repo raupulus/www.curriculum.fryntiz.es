@@ -1,6 +1,6 @@
         <FOOTER id="piedepagina">
             <ADDRESS>
-                Raúl Caro Pastorino, alias "fryntiz"
+                <P>Raúl Caro Pastorino</P>
                 <BR/>
                 <A href="mailto:tecnico@fryntiz.es" title="Correo electrónico de Fryntiz">tecnico@fryntiz.es</A>
             </ADDRESS>

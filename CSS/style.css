@@ -438,14 +438,14 @@ FORM { /*FORMULARIO CONTACTO*/
   padding: 5px;
   margin: 0 15px 5px 0;
   text-align: center;
-  color: black;
-  background-color: yellow;
-  border: 2px solid red;
+  color: yellow;
+  background-color: #87a8a8;
   border-radius: 0 15px 15px 0;
   -moz-border-radius: 0 15px 15px 0;
   -webkit-border-radius: 0 15px 15px 0;
   -o-border-radius: 0 15px 15px 0;
   -ms-border-radius: 0 15px 15px 0;
+  text-shadow: 3px 3px 3px black;
   box-shadow: 10px 5px 15px black;
 }
 

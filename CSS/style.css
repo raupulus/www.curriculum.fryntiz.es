@@ -51,10 +51,6 @@ BODY {
   width: 1000px;
   background-color: white;
   background-image: url(../images/patron.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 #contenidoweb {
   display: flex;

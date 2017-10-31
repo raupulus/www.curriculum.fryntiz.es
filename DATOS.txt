@@ -1,3 +1,5 @@
+Replantear dimensiones
+
 Tamaño slide head --> 1024x250
 
 Tamaño slide web en lateral --> 360x600

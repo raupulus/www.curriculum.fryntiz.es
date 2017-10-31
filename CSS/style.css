@@ -1,4 +1,11 @@
 /*
+COLORES
+#435454 → Gris, usar letras blancas
+#87a8a8 → Gris/Azul mate letras negras o no usar letras
+#cafcfc → Azul pastel → usar letras negras
+*/
+
+/*
 ----------------------------------
 Fuentes
 ----------------------------------
@@ -43,11 +50,11 @@ BODY {
   margin: auto;
   width: 1000px;
   background-color: #1a94c3;
-  background-image: url(../images/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-image: url(../images/patron.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 #contenidoweb {
   display: flex;

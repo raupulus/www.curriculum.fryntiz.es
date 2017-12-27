@@ -6,29 +6,29 @@
  */
 
 /*
-----------------------------------
-Tamaño menor de 600
-----------------------------------
+***********************
+  Tamaño menor de 600
+***********************
 */
 @media screen and (max-width:600px) {
-BODY {
+body {
     max-width: 600px;
     }
 #contenidoweb {
     display: block;
     }
-SECTION {
+section {
     margin: 0;
     }
-ASIDE {
+aside {
     margin: 0;
     }
 }
 
 /*
-----------------------------------
-CONTENIDO
-----------------------------------
+***********************
+       CONTENIDO
+***********************
 */
 
 .cajaTitulo H2 {

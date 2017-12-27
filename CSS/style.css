@@ -13,9 +13,9 @@ COLORES
 */
 
 /*
-----------------------------------
-Fuentes
-----------------------------------
+***********************
+       FUENTES
+***********************
 */
 @font-face {
   font-family: "Contenido";
@@ -43,9 +43,9 @@ Fuentes
 }
 
 /*
-----------------------------------
-GENERALES
-----------------------------------
+***********************
+       GENERALES
+***********************
 */
 * {
   margin: 0;
@@ -53,7 +53,7 @@ GENERALES
   font-family: Contenido, monospace, serif, sans-serif;
 }
 
-BODY {
+body {
   margin: auto;
   width: 1000px;
   background-color: white;
@@ -66,26 +66,26 @@ BODY {
 #anillas {
   flex: 1;
 }
-SECTION {
+section {
   flex: 13;
 }
-ASIDE {
+aside {
   flex: 4;
   margin: 0 0 0 5px;
 }
-H1 {
+h1 {
   font-size: 1.8em;
   font-family: Titulo, monospace, serif, sans-serif;
   text-align: center;
 }
-H2 {
+h2 {
   font-size: 1.4em;
   font-family: Titulo, monospace, serif, sans-serif;
 }
-H3, H5, H6 {
+h3, h5, h6 {
   font-family: Subtitulo, monospace, serif, sans-serif;
 }
-H3 {
+h3 {
   font-size: 1.2em;
 }
 .imagenMarco { /*Solo para decorar <IMG>*/
@@ -103,10 +103,11 @@ H3 {
   font-weight: bolder;
   font-size: 1.2;
 }
+
 /*
-----------------------------------
-MENÚ PRINCIPAL
-----------------------------------
+***********************
+    MENÚ PRINCIPAL
+***********************
 */
 #menuprincipal {
   position: fixed;
@@ -153,7 +154,7 @@ MENÚ PRINCIPAL
   background-color: black;
   border-bottom: 3px groove red;
 }
-#menuprincipal #ulMenu LI {
+#menuprincipal #ulMenu li {
   width: 116px;
   height: 15px;
   padding: 7px 0 2px 0;
@@ -187,7 +188,7 @@ MENÚ PRINCIPAL
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#807c7c', GradientType=0 );
 }
 
-#menuprincipal #ulMenu LI:hover {
+#menuprincipal #ulMenu li:hover {
   cursor: pointer;
   color: #1386dc;
   background-color: red;
@@ -219,15 +220,14 @@ MENÚ PRINCIPAL
 }
 
 /*
-----------------------------------
-TÍTULO
-----------------------------------
+***********************
+       TÍTULO
+***********************
 */
-
 #cajaHead {
   margin: 40px 0 0 0;
 }
-#cajaHead H1 {
+#cajaHead h1 {
   font-family: TituloWEB, monospace, serif, sans-serif;
   font-size: 4em;
   color: #435454;
@@ -266,7 +266,7 @@ TÍTULO
       2px -2px 1px #87a8a8,
       -2px -2px 1px #87a8a8;
 }
-#cajaHead IMG {
+#cajaHead img {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -279,37 +279,37 @@ TÍTULO
 }
 
 /*
-----------------------------------
-CONTENIDO
-----------------------------------
+***********************
+       CONTENIDO
+***********************
 */
 .cajaTitulo {
   margin: 20px 15px;
   padding: 15px;
 }
-.cajaTitulo H2 {
+.cajaTitulo h2 {
   margin: 10px auto;
   font-size: 2em;
   text-align: center;
   font-family: Subtitulo, monospace, serif, sans-serif;
   border-bottom: 5px solid #cafcfc;
 }
-.cajaTitulo P {
+.cajaTitulo p {
   padding-bottom: 8px;
   font-size: 1.1em;
   font-family: Destacado, monospace, serif, sans-serif;
   border-bottom: 5px solid dodgerblue;
 }
-.cajatitulo P LI A {
+.cajatitulo p li a {
   color: #87a8a8;
 }
-.cajatitulo P LI A:link {
+.cajatitulo p li a:link {
 
 }
-.cajatitulo P LI A:visited {
+.cajatitulo p li a:visited {
 
 }
-.cajatitulo P LI A:hover {
+.cajatitulo p li a:hover {
 
 }
 .badgets {
@@ -321,25 +321,25 @@ CONTENIDO
   border-collapse: collapse;
   border-spacing: 0;
 }
-.tablaRemarcada TH {
+.tablaRemarcada th {
   font-size: 1.3em;
 }
-.tablaRemarcada TD, .tablaRemarcada TH {
+.tablaRemarcada td, .tablaRemarcada th {
   margin: 0;
   padding: 5px;
   align-content: center;
   text-align: center;
   vertical-align: middle;
 }
-.tablaRemarcada TD IMG {
+.tablaRemarcada td img {
   width: 40px;
   height: 40px;
 }
-.tablaRemarcada TR:nth-child(odd) {
+.tablaRemarcada tr:nth-child(odd) {
   background-color: black;
   color: yellow;
 }
-.tablaRemarcada TR:nth-child(even) {
+.tablaRemarcada tr:nth-child(even) {
   background-color: yellow;
   color: black;
 }
@@ -347,7 +347,7 @@ CONTENIDO
   margin: 0 0 10px 0;
   padding: 15px 0;
 }
-FORM { /*FORMULARIO CONTACTO*/
+form { /*FORMULARIO CONTACTO*/
   font-size: 1.6em;
   padding: 5px;
   align-content: center;
@@ -372,14 +372,14 @@ FORM { /*FORMULARIO CONTACTO*/
   background-color: #002838;
   box-shadow: 5px 5px 15px black;
 }
-#formulariocontacto DIV INPUT {
+#formulariocontacto div input {
   width: 60%;
   margin: 5px;
   padding: 5px 3px;
   height: 30px;
   font-size: 1.1em;
 }
-#cajacontenido INPUT:focus, #cajacontenido TEXTAREA:focus {
+#cajacontenido input:focus, #cajacontenido textarea:focus {
   box-shadow: 5px 5px 5px #112838,
       -5px 5px 5px #112838,
       5px -5px 5px #112838,
@@ -419,7 +419,7 @@ FORM { /*FORMULARIO CONTACTO*/
   background-repeat: repeat-y;
   background-size: contain;
 }
-#contenidoweb SECTION {
+#contenidoweb section {
   margin: 0 5px 0 0;
   padding: 15px 0;
   background-color: whitesmoke;
@@ -434,7 +434,7 @@ FORM { /*FORMULARIO CONTACTO*/
   -o-box-shadow: 5px 5px 15px black;
   -ms-box-shadow: 5px 5px 15px black;
 }
-#contenidoweb SECTION ARTICLE H2 {
+#contenidoweb section article h2 {
   font-size: 1.4em;
   font-family: Destacado, monospace, serif, sans-serif;
   padding: 5px;
@@ -451,7 +451,7 @@ FORM { /*FORMULARIO CONTACTO*/
   box-shadow: 10px 5px 15px black;
 }
 
-#contenidoweb SECTION ARTICLE H3 {
+#contenidoweb section article h3 {
   padding: 8px;
   margin: 5px 0 3px 30px;
   text-align: right;
@@ -466,14 +466,14 @@ FORM { /*FORMULARIO CONTACTO*/
   -ms-box-shadow: -10px 5px 15px black;
 }
 
-#contenidoweb SECTION ARTICLE P {
+#contenidoweb section article p {
   font-size: 1.1em;
   margin: 15px 35px;
   font-family: Contenido, monospace, serif, sans-serif;
   text-align: justify;
 }
 
-#contenidoweb SECTION ARTICLE UL {
+#contenidoweb section article ul {
   font-size: 1.1em;
   font-family: Contenido, monospace, serif, sans-serif;
   margin: 5px 15px;
@@ -483,12 +483,13 @@ FORM { /*FORMULARIO CONTACTO*/
 #contenidoAnillasSuperior {
   display: none;
 }
+
 /*
-----------------------------------
-CONTACTO
-----------------------------------
+***********************
+       CONTACTO
+***********************
 */
-.tablaContacto TD{
+.tablaContacto td{
   margin: 10px;
   padding: 5px;
   text-align: center;
@@ -509,10 +510,11 @@ CONTACTO
   font-size: 1.4em;
   color: dodgerblue;
 }
+
 /*
-----------------------------------
-MENÚ DERECHA
-----------------------------------
+***********************
+     MENÚ DERECHA
+***********************
 */
 #menuderecha {
   padding: 10px;
@@ -530,7 +532,7 @@ MENÚ DERECHA
   background-position: top;
   background-size: contain;
 }
-#menuderecha IMG {
+#menuderecha img {
   width: 100%;
 }
 
@@ -544,15 +546,15 @@ MENÚ DERECHA
   -ms-border-radius: 0 0 16px 16px;
 }
 
-#mostrarwebs IMG {
+#mostrarwebs img {
   border-bottom: 5px inset orange;
 }
 
-#mostrarwebs A {
+#mostrarwebs a {
   text-decoration: none;
 }
 
-#mostrarwebs P {
+#mostrarwebs p {
   height: 220px;
   padding: 3px;
   color: skyblue;
@@ -561,7 +563,7 @@ MENÚ DERECHA
   text-align: justify;
 }
 
-#mostrarwebs H1 {
+#mostrarwebs h1 {
   background-color: black;
   font-size: 1em;
   font-family: Subtitulo, monospace, serif, sans-serif;
@@ -573,7 +575,7 @@ MENÚ DERECHA
   width: 100%;
 }
 
-#cajaredes A DIV {
+#cajaredes a div {
   width: 65px;
   height: 65px;
   margin: 20px 0;
@@ -618,10 +620,11 @@ MENÚ DERECHA
 #linkedin {
   background-image: url("../images/Redes_Sociales/linkedin.png");
 }
+
 /*
-----------------------------------
-PIE DE PÁGINA
-----------------------------------
+***********************
+        FOOTER
+***********************
 */
 #piedepagina {
   width: 80%;
@@ -637,13 +640,13 @@ PIE DE PÁGINA
   box-shadow: 5px 5px 5px black;
 }
 
-#piedepagina ADDRESS {
+#piedepagina address {
   font-size: 1.6em;
   font-family: Destacado, monospace, serif, sans-serif;
   text-align: center;
 }
 
-#piedepagina ADDRESS P {
+#piedepagina address p {
   color: #87a8a8;
   font-size: 1.6em;
   text-shadow: 3px 3px 2px black;

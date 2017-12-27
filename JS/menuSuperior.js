@@ -1,20 +1,26 @@
 /*
-------------------------------------------------
-Menú Superior
-------------------------------------------------
+***********************
+     MENÚ SUPERIOR
+***********************
 */
-var EstadoMenu = "false";
-//Activar Menú superior
+var estadoMenu = false;
+
+/**
+ * Al pulsar sobre la barra superior muestra el menú
+ */
 function activarMenuSuperior () {
-    var menu = document.getElementById("ulMenuMINI");
-    menu.style.display = "block";
-    EstadoMenu = "true";
+    var menu = document.getElementById('ulMenuMINI');
+    menu.style.display = 'block';
+    estadoMenu = true;
 }
-//Cerrar el Menú superior al pulsar fuera de este
+
+/**
+ * Cuando se pulsa fuera del menú se cierra este
+ */
 function cerrarMenuSuperior () {
     var menu = document.getElementById("ulMenuMINI");
-    if (EstadoMenu == "true") {
-        menu.style.display = "none";
-        EstadoMenu = "false";
+    if (estadoMenu == true) {
+        menu.style.display = 'none';
+        estadoMenu = false;
     }
 }

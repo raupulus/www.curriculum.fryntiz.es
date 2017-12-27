@@ -388,7 +388,6 @@ FORM { /*FORMULARIO CONTACTO*/
 .formnombre {
   width: 150px;
   display: block;
-  vertical-align: middle;
 }
 .forminput {
   width: 100%;

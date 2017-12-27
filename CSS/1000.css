@@ -72,7 +72,7 @@ TAMAÑO entre 601 y 1000
     #menuprincipal img {
         position: absolute;
         left: 0;
-        top -28px;
+        top: -28px;
         width: 50px;
         height: 50px;
     }
@@ -117,7 +117,6 @@ TAMAÑO entre 601 y 1000
         margin: 0;
         letter-spacing: 5px;
         text-align: center;
-        vertical-align: middle;
         align-content: center;
         align-items: center;
         font-size: 1.2em;

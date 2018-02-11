@@ -1,7 +1,14 @@
+@charset "UTF-8";
+/**
+ * @author Raúl Caro Pastorino
+ * @copyright Copyright © 2017 Raúl Caro Pastorino
+ * @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
+ */
+
 /*
-----------------------------------
-Devolver valores a 1000
-----------------------------------
+***********************
+TAMAÑO SUPERIOR A 1000
+***********************
 */
 @media screen and (min-width:1001px) {
     #ulMenuMINI {
@@ -11,46 +18,45 @@ Devolver valores a 1000
         display: none;
     }
 }
+
 /*
-----------------------------------
-Tamaño entre 601 y 1000
-----------------------------------
+***********************
+TAMAÑO entre 601 y 1000
+***********************
 */
 @media screen and (max-width:1000px) {
     /*
-    ----------------------------------
-    GENERAL
-    ----------------------------------
+    ***********************
+            GENERAL
+    ***********************
     */
-    BODY {
+    body {
         width: 100%;
         background-image: none;
     }
-    HEADER H1 {
-    font-size: 1.2em;
-    text-shadow: none;
-    -moz-text-shadow: none;
-    -webkit-text-shadow: none;
-    -o-text-shadow: none;
-    -ms-text-shadow: none;
-}
+    header h1 {
+        font-size: 1.2em;
+        text-shadow: none;
+    }
+
     /*
-    ----------------------------------
-    TÍTULO
-    ----------------------------------
+    ***********************
+            Título
+    ***********************
     */
     #cajaHead {
         margin-top: 70px;
     }
-    #cajaHead H1 {
+    #cajaHead h1 {
         border-radius: 0;
         font-size: 2.4em;
-        background-image:url(../images/tableroX600.png);
+        background-image:url('../images/tableroX600.png');
     }
+
     /*
-    ----------------------------------
-    MENÚ PRINCIPAL
-    ----------------------------------
+    ***********************
+         MENÚ PRINCIPAL
+    ***********************
     */
     #ulMenu {
         height: 0;
@@ -59,17 +65,17 @@ Tamaño entre 601 y 1000
     #menuprincipal #ulMenu {
         display: none;
     }
-    #menuprincipal IMG {
+    #menuprincipal img {
         position: absolute;
         left: 0;
-        top -28px;
+        top: -28px;
         width: 50px;
         height: 50px;
     }
-    #ulMenu LI {
+    #ulMenu li {
         display: none;
     }
-    #ulMenu A {
+    #ulMenu a {
         display: none;
     }
     #ulMenuMINI {
@@ -83,7 +89,7 @@ Tamaño entre 601 y 1000
         padding-top: 10px;
         letter-spacing: 10px;
     }
-    #menuprincipal #mostrarMenu IMG {
+    #menuprincipal #mostrarMenu img {
         position: absolute;
         left: 0;
         top: 5px;
@@ -100,14 +106,13 @@ Tamaño entre 601 y 1000
         background-color: transparent;
         border: none;
     }
-    #menuprincipal #ulMenuMINI LI {
+    #menuprincipal #ulMenuMINI li {
         width: 100%;
         height: 60px;
         padding-top: 30px;
         margin: 0;
         letter-spacing: 5px;
         text-align: center;
-        vertical-align: middle;
         align-content: center;
         align-items: center;
         font-size: 1.2em;
@@ -119,8 +124,7 @@ Tamaño entre 601 y 1000
         border-bottom: 5px solid black;
         border-radius: 0;
         text-shadow: none;
-        background-color: red;
-        background: red;
+        background-color: #435454;
     }
     #menuprincipal #ulMenuMINI #cancelarmenu {
         display: block;
@@ -133,13 +137,13 @@ Tamaño entre 601 y 1000
         color: yellow;
         background-color: black;
     }
-    #menuprincipal #ulMenuMINI LI:hover {
+    #menuprincipal #ulMenuMINI li:hover {
         cursor: pointer;
         color: #1386dc;
         background-color: black;
         background: black;
     }
-    #menuprincipal #ulMenuMINI A {
+    #menuprincipal #ulMenuMINI a {
         text-decoration: none;
     }
     #paginicio #menuprincipal .toinicio, #pagcv #menuprincipal .tocv, #pagcvext #menuprincipal .tocvext, #pagdescargas #menuprincipal .todescargas, #pagcontacto #menuprincipal .tocontacto, #pagmasinfo #menuprincipal .tomasinfo {
@@ -147,20 +151,21 @@ Tamaño entre 601 y 1000
         background-color: #1386dc;
         background: #1386dc;
     }
+
     /*
-    ----------------------------------
-    CONTENIDO
-    ----------------------------------
+    ***********************
+            CONTENIDO
+    ***********************
     */
     #contenidoweb {
         display: block;
         margin: 0;
         width: 100%;
     }
-    #contenidoweb SECTION ARTICLE H2 {
+    #contenidoweb section article h2 {
         border: none;
     }
-    #contenidoweb SECTION {
+    #contenidoweb section {
         margin: 0;
         border-radius: 0;
         -moz-border-radius: 0;
@@ -176,42 +181,43 @@ Tamaño entre 601 y 1000
     #contenidoAnillasSuperior {
         display: block;
     }
-    .tablaRemarcada TH {
+    .tablaRemarcada th {
         font-size: 1.8em;
     }
-    .cajaTitulo H2 {
+    .cajaTitulo h2 {
     font-size: 2.2em;
     }
-    .cajaTitulo P {
+    .cajaTitulo p {
         font-size: 1.8em;
     }
-    .cajaTitulo LI {
+    .cajaTitulo li {
         font-size: 2em;
     }
     .cajaTituloDeArticulo {
         font-size: 2em;
     }
-    SECTION H3 {
+    section h3 {
         font-size: 1.8em;
     }
-    SECTION ARTICLE P,  SECTION ARTICLE UL{
+    section article p, section article ul{
         font-size: 1.6em !important;
     }
-    TABLE TD {
+    table td {
         font-size: 2em;
     }
+
     /*
-    ----------------------------------
-    MENÚ DERECHA
-    ----------------------------------
+    ***********************
+         MENÚ DERECHA
+    ***********************
     */
     #menuderecha {
         margin: 0;
     }
-    #descripcionImgWebs H1 {
+    #descripcionImgWebs h1 {
         font-size: 2em;
     }
-    #descripcionImgWebs P {
+    #descripcionImgWebs p {
         font-size: 1.8em;
     }
 }

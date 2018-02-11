@@ -37,10 +37,6 @@ TAMAÑO entre 601 y 1000
     header h1 {
         font-size: 1.2em;
         text-shadow: none;
-        -moz-text-shadow: none;
-        -webkit-text-shadow: none;
-        -o-text-shadow: none;
-        -ms-text-shadow: none;
     }
 
     /*
@@ -54,7 +50,7 @@ TAMAÑO entre 601 y 1000
     #cajaHead h1 {
         border-radius: 0;
         font-size: 2.4em;
-        background-image:url(../images/tableroX600.png);
+        background-image:url('../images/tableroX600.png');
     }
 
     /*
@@ -128,8 +124,7 @@ TAMAÑO entre 601 y 1000
         border-bottom: 5px solid black;
         border-radius: 0;
         text-shadow: none;
-        background-color: red;
-        background: red;
+        background-color: #435454;
     }
     #menuprincipal #ulMenuMINI #cancelarmenu {
         display: block;

@@ -152,7 +152,7 @@ h3 {
 #mostrarMenu:hover {
     cursor: pointer;
     color: white;
-    background-color: red;
+    background-color: #ff0000;
     opacity: 1;
 }
 
@@ -172,7 +172,7 @@ h3 {
     align-content: center;
     text-align: center;
     background-color: black;
-    border-bottom: 3px groove red;
+    border-bottom: 3px groove #cafcfc;
 }
 
 #menuprincipal #ulMenu li {
@@ -187,12 +187,14 @@ h3 {
     align-content: center;
     align-items: center;
     vertical-align: middle;
-    border-bottom: 3px groove #ff0000;
+    border-bottom: 3px groove #cafcfc;
     border-radius: 0 0 16px 16px;
     text-shadow: 4px 1px 3px black;
     background-color: black;
-    background: rgba(0, 0, 0, 1);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 13%, rgba(128, 124, 124, 1) 100%);
+    background: rgba(67, 84, 84, 1);
+    background: linear-gradient(to bottom,
+        rgba(67, 84, 84, 1) 0%,
+        rgba(128, 124, 124, 1) 100%);
 }
 
 #menuprincipal #ulMenu li:hover {
@@ -200,7 +202,9 @@ h3 {
     color: #1386dc;
     background-color: #ff0000;
     background: rgba(0, 0, 0, 1);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(255, 0, 0, 1) 100%);
+    background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(135, 168, 168, 1) 100%);
 }
 
 #cancelarmenu {

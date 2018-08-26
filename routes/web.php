@@ -11,6 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['as' => 'home', function () {
+    return view('index');
+}]);
+
+Route::get('objetive', ['as' => 'objetive', function () {
+    return view('objetive');
+}]);
+
+Route::get('experience', ['as' => 'experience', function () {
+    return view('experience');
+}]);
+
+Route::get('education', ['as' => 'education', function () {
+    return view('education');
+}]);
+
+Route::get('skills', ['as' => 'skills', function () {
+    return view('skills');
+}]);

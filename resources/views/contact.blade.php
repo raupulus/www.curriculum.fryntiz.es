@@ -21,4 +21,39 @@ E-mail: dev@fryntiz.es
 {{-- Contenido de la sección --}}
 @section('content')
     <h2>Formulario de contacto</h2>
+    <form method="POST" action="sendMail">
+        <div>
+            <div>
+            <label for="firstname">firstname</label>
+            <input id="firstname" type="text" name="firstname" />
+            </div>
+
+            <div>
+            <label for="secondname">secondname</label>
+            <input id="secondname" type="text" name="secondname" />
+            </div>
+
+            <div>
+            <label for="subject">subject</label>
+            <input id="subject" type="text" name="subject" />
+            </div>
+
+            <div>
+            <label for="email">email</label>
+            <input id="email" type="text" name="email" />
+            </div>
+
+            <div>
+            <label for="message">message</label>
+            <textarea id="message" name="message"></textarea>
+            </div>
+
+            <div>
+            <label for="registered">Registered</label>
+            <input id="message" type="text" name="registered" value="{{ date('Y-m-d') }}" />
+            </div>
+        </div>
+
+        <input type="submit" />
+    </form>
 @stop

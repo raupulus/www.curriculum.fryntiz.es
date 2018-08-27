@@ -12,6 +12,7 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        //
+        //Temporalmente y solo mientras testeo desactivo form contacto
+        'sendMail'
     ];
 }

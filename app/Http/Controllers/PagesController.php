@@ -35,4 +35,9 @@ class PagesController extends Controller
     {
         return view('contact');
     }
+
+    public function sendMail()
+    {
+        return 'Procesando formulario';
+    }
 }

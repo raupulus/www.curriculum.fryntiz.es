@@ -37,6 +37,8 @@ Route::get('contact', [
     'uses' => 'PagesController@contact'
 ]);
 
+Route::post('sendMail', 'PagesController@sendMail');
+
 /*
 Route::get('/', ['as' => 'home', function () {
     return view('index');

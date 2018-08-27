@@ -8,4 +8,13 @@ E-mail: dev@fryntiz.es
 -->
 <header>
     <h1>@yield('title')</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ route('home') }}">Home</a></li>
+            <li><a href="{{ route('objetive') }}">Objetive</a></li>
+            <li><a href="{{ route('experience') }}">Experience</a></li>
+            <li><a href="{{ route('education') }}">Education</a></li>
+            <li><a href="{{ route('skills') }}">Skills</a></li>
+        </ul>
+    </nav>
 </header>

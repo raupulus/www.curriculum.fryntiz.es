@@ -32,6 +32,11 @@ Route::get('skills', [
     'uses' => 'PagesController@home'
 ]);
 
+Route::get('contact', [
+    'as' => 'contact',
+    'uses' => 'PagesController@contact'
+]);
+
 /*
 Route::get('/', ['as' => 'home', function () {
     return view('index');

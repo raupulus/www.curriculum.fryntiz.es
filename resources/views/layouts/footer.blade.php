@@ -6,6 +6,21 @@
 Author Web: https://fryntiz.es
 E-mail: dev@fryntiz.es
 -->
-<div>
-    <footer>Este es el footer</footer>
-</div>
+
+<footer>
+    <p>Este es el footer</p>
+    <div id="footerautor">
+        Raúl Caro Pastorino
+    </div>
+
+    <div id="footertechnology">
+        Built with laravel
+    </div>
+
+    <div id="footerlinks" class="row">
+        <div class="flinks col-md-4">1</div>
+        <div class="flinks col-md-4">2</div>
+        <div class="flinks col-md-4">3</div>
+    </div>
+    <div>Copyright {{ date('Y') }}</div>
+</footer>

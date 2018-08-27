@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Session;
 
 class PagesController extends Controller
 {
@@ -36,8 +37,18 @@ class PagesController extends Controller
         return view('contact');
     }
 
-    public function sendMail()
+    public function sendMail(Request $request)
     {
-        return 'Procesando formulario';
+        // Devuelvo temporalmente los datos del formulario como JSON
+        $msg = 'Procesando formulario con los siguientes datos:';
+
+        foreach($request->all() as $name => $val) {
+            //$msg .= '<br />'.$name.': '.$val.'<br />';
+            $msg .= $name.': '.$val;
+        }
+
+        Session::flash('flash_message', $msg);
+
+        return redirect()->route('contact');
     }
 }

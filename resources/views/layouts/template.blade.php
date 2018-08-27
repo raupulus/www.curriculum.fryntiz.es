@@ -7,6 +7,10 @@
 Author Web: https://fryntiz.es
 E-mail: dev@fryntiz.es
 -->
+@if(Session::has('flash_message'))
+    {{ Session::get('flash_message') }}
+@endif
+
 <html lang="es">
   <head>
     <meta charset="utf-8">

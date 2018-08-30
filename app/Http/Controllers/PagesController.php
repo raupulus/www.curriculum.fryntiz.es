@@ -43,7 +43,8 @@ class PagesController extends Controller
      * Validación del formulario
      */
     $this->validate($request, [
-      'firstname' => 'required',
+      'first_name' => [ 'required', 'min:3' ],
+      'last_name' => [ 'nullable', 'min:3' ],
       'subject' => [ 'required', 'min:10' ],
       'email' => [ 'nullable', 'email' ],
       'message' => [ 'min:20', 'max:1000' ],

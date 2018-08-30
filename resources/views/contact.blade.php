@@ -71,6 +71,6 @@ E-mail: dev@fryntiz.es
       </div>
     </div>
 
-    <input type="submit" value="{{ trans('contact.submit') }}" />
+    <input class="btn btn-primary" type="submit" value="{{ trans('contact.submit') }}" />
   </form>
 @stop

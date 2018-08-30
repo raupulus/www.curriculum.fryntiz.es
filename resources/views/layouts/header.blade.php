@@ -8,13 +8,13 @@ E-mail: dev@fryntiz.es
 -->
 
 <style>
-    .active {
+    .menuActive {
         font-weight: bold;
         color: red;
         background-color: yellow;
     }
 
-    .inactive {
+    .menuInactive {
         font-weight: bold;
         color: green;
     }
@@ -22,7 +22,7 @@ E-mail: dev@fryntiz.es
 
 <?php
     function activeMenu($url) {
-        return request()->is($url) ? 'active' : 'inactive';
+        return request()->is($url) ? 'menuActive' : 'menuInactive';
     }
 ?>
 

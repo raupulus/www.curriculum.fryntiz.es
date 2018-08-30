@@ -37,19 +37,12 @@ class PagesController extends Controller
     return view('contact');
   }
 
-  public function sendMail(Request $request)
+  /*
+   * Valida y comprueba el formulario de contacto para posteriormente enviar
+   * el email.
+   */
+  public function sendMail(\App\Http\Requests\CreateMessageRequest $request)
   {
-    /*
-     * Validación del formulario
-     */
-    $this->validate($request, [
-      'first_name' => [ 'required', 'min:3' ],
-      'last_name' => [ 'nullable', 'min:3' ],
-      'subject' => [ 'required', 'min:10' ],
-      'email' => [ 'nullable', 'email' ],
-      'message' => [ 'min:20', 'max:1000' ],
-    ]);
-
     // Devuelvo temporalmente los datos del formulario como JSON
     $msg = 'Procesando formulario con los siguientes datos:';
 

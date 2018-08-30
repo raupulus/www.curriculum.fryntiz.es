@@ -28,49 +28,49 @@ E-mail: dev@fryntiz.es
     }
   </style>
 
-  <h2>Formulario de contacto</h2>
+  <h2>{{ trans('contact.title') }}</h2>
   <form method="POST" action="sendMail">
     <div>
       <div>
-        <label for="firstname">firstname</label>
-        <input id="firstname" type="text" name="firstname"
-                              value="{{ old('firstname') }}" />
-        {!! $errors->first('firstname', '<span class="formError">:message</span>') !!}
+        <label for="first_name">{{ trans('contact.first_name') }}</label>
+        <input id="first_name" type="text" name="first_name"
+                              value="{{ old('first_name') }}" />
+        {!! $errors->first('first_name', '<span class="formError">:message</span>') !!}
       </div>
 
       <div>
-        <label for="secondname">secondname</label>
-        <input id="secondname" type="text" name="secondname"
-                               value="{{ old('secondname') }}" />
-        {!! $errors->first('secondname', '<span class="formError">:message</span>') !!}
+        <label for="last_name">{{ trans('contact.last_name') }}</label>
+        <input id="last_name" type="text" name="last_name"
+                               value="{{ old('last_name') }}" />
+        {!! $errors->first('last_name', '<span class="formError">:message</span>') !!}
       </div>
 
       <div>
-        <label for="subject">subject</label>
+        <label for="subject">{{ trans('contact.subject') }}</label>
         <input id="subject" type="text" name="subject"
                             value="{{ old('subject') }}" />
         {!! $errors->first('subject', '<span class="formError">:message</span>') !!}
       </div>
 
       <div>
-        <label for="email">email</label>
+        <label for="email">{{ trans('contact.email') }}</label>
         <input id="email" type="text" name="email"
                           value="{{ old('email') }}" />
         {!! $errors->first('email', '<span class="formError">:message</span>') !!}
       </div>
 
       <div>
-        <label for="message">message</label>
+        <label for="message">{{ trans('contact.message') }}</label>
         <textarea id="message" name="message">{{ old('message') }}</textarea>
         {!! $errors->first('message', '<span class="formError">:message</span>') !!}
       </div>
 
       <div>
-        <label for="registered">Registered</label>
+        <label for="registered">{{ trans('contact.registered') }}</label>
         <input id="message" type="text" name="registered" value="{{ date('Y-m-d') }}" />
       </div>
     </div>
 
-    <input type="submit" />
+    <input type="submit" value="{{ trans('contact.submit') }}" />
   </form>
 @stop

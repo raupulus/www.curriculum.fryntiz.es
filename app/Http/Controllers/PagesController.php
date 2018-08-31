@@ -51,9 +51,11 @@ class PagesController extends Controller
         $msg .= $name.': '.$val;
     }
 
-    Session::flash('flash_message', $msg);
-
-    return redirect()->route('contact');
+    //Session::flash('sucess_message', $msg);
+    return redirect()->route('contact')
+                     ->with('sucess_message', $msg)
+                     ->withCookie('sendmail', true, 2)  // Indica que envió un email
+                     ->withCookie('sendmail_at', time(), 2);
     //return $request->all();
   }
 }

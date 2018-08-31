@@ -71,6 +71,22 @@ E-mail: dev@fryntiz.es
       </div>
     </div>
 
-    <input class="btn btn-primary" type="submit" value="{{ trans('contact.submit') }}" />
+    {{-- Solo se permite enviar un formulario cada 2 minutos --}}
+    <div id="sendEmail">
+        @if( (int)Request::cookie('sendmail') === 1 )
+            Se ha enviado un email hace menos de 2 minutos
+            <br />
+            <?php
+                $send_at = (int)Request::cookie('sendmail_at');
+                $unblock_at = $send_at + 120;
+                $t_restante_mail = $unblock_at - (int)time();
+            ?>
+            Tiempo restante para enviar de nuevo: {{ $t_restante_mail }} segundos
+            <br />
+            <input class="btn btn-primary" type="submit" value="{{ trans('contact.submit') }}" disabled />
+        @else
+            <input class="btn btn-primary" type="submit" value="{{ trans('contact.submit') }}" />
+        @endif
+    </div>
   </form>
 @stop

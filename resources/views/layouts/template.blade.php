@@ -7,9 +7,6 @@
 Author Web: https://fryntiz.es
 E-mail: dev@fryntiz.es
 -->
-@if(Session::has('flash_message'))
-    {{ Session::get('flash_message') }}
-@endif
 
 <html lang="es">
   <head>
@@ -22,6 +19,11 @@ E-mail: dev@fryntiz.es
   </head>
 
   <body>
+    <div id="boxinfo">
+        Caja de información:
+        <br />
+    </div>
+
     <div id="boxheader">
         @include('layouts.header')
     </div>
@@ -31,7 +33,11 @@ E-mail: dev@fryntiz.es
     </div>
 
     <div id="boxcontent">
-        @yield('content')
+        @if(Session::has('sucess_message'))
+            {{ Session::get('sucess_message') }}
+        @else
+            @yield('content')
+        @endif
     </div>
 
     <div id="boxfooter">

@@ -30,6 +30,9 @@ E-mail: dev@fryntiz.es
 
   <h2>{{ trans('contact.title') }}</h2>
   <form method="POST" action="sendMail">
+    {{-- <input type="hidden" name="_token" value="{{ csrf_token() }}" /> --}}
+    {!! csrf_field() !!}
+
     <div>
       <div>
         <label for="first_name">{{ trans('contact.first_name') }}</label>

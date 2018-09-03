@@ -29,7 +29,7 @@ E-mail: dev@fryntiz.es
   </style>
 
   <h2>{{ trans('contact.title') }}</h2>
-  <form method="POST" action="sendMail">
+  <form method="POST" action="{{ route('messages.store') }}">
     {{-- <input type="hidden" name="_token" value="{{ csrf_token() }}" /> --}}
     {!! csrf_field() !!}
 
@@ -70,7 +70,7 @@ E-mail: dev@fryntiz.es
 
       <div>
         <label for="registered">{{ trans('contact.registered') }}</label>
-        <input id="message" type="text" name="registered" value="{{ date('Y-m-d') }}" />
+        <input id="message" type="text" name="registered" value="{{ date('Y-m-d H:i:s') }}" />
       </div>
     </div>
 

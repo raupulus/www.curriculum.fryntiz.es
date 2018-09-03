@@ -9,8 +9,8 @@ E-mail: dev@fryntiz.es
 <aside>
     Este es el sidebar
     <ul>
-        <li><a href="{{ route('contact') }}">Contact</a></li>
+        <li><a href="{{ route('contact') }}">Contact index</a></li>
+        <li><a href="{{ route('messages.index') }}">Messages index</a></li>
         <li>Elemento 2</li>
-        <li>Elemento 3</li>
     </ul>
 </aside>

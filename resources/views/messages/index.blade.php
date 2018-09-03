@@ -52,8 +52,17 @@ E-mail: dev@fryntiz.es
                     <td>{{ $msg->message }}</td>
                     <td>
                         <a href="{{ route('messages.edit', $msg->id) }}">
-                            Editar
+                            {{ trans('contact.edit') }}
                         </a>
+
+                        <form method="POST"
+                              action="{{ route('messages.destroy', $msg->id) }}">
+                            {!! csrf_field() !!}
+                            {!! method_field('DELETE') !!}
+                            
+                            <button type="submit">
+                                {{ trans('contact.delete') }}
+                            </button>
                     </td>
                 </tr>
             @endforeach

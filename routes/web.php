@@ -64,9 +64,15 @@ Route::get('messages/{id}/edit', [
 ]);
 
 // Actualizar un mensaje
-Route::get('messages/{id}', [
+Route::put('messages/{id}', [
     'as' => 'messages.update',
     'uses' => 'MessagesController@update'
+]);
+
+// Actualizar un mensaje
+Route::delete('messages/{id}', [
+    'as' => 'messages.destroy',
+    'uses' => 'MessagesController@destroy'
 ]);
 
 /*

@@ -57,6 +57,18 @@ Route::get('messages/{id}', [
     'uses' => 'MessagesController@show'
 ]);
 
+// Editar un mensaje
+Route::get('messages/{id}/edit', [
+    'as' => 'messages.edit',
+    'uses' => 'MessagesController@edit'
+]);
+
+// Actualizar un mensaje
+Route::get('messages/{id}', [
+    'as' => 'messages.update',
+    'uses' => 'MessagesController@update'
+]);
+
 /*
 Route::get('/', ['as' => 'home', function () {
     return view('index');

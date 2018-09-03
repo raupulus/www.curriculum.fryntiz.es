@@ -13,10 +13,10 @@ E-mail: dev@fryntiz.es
 @section('title', 'Messages')
 
 {{-- Descripción --}}
-@section('description', 'Contact')
+@section('description', 'Messages')
 
 {{-- Palabras clave --}}
-@section('keywords', 'curriculum, curriculum online, Raúl Caro Pastorino, contact')
+@section('keywords', 'Messages, curriculum, curriculum online, Raúl Caro Pastorino, contact')
 
 <style>
     table {
@@ -35,16 +35,26 @@ E-mail: dev@fryntiz.es
                 <th>Apellidos</th>
                 <th>email</th>
                 <th>Mensaje</th>
+                <th>Acciones</th>
             </tr>
         </thead>
 
         <tbody>
             @foreach ($messages as $msg)
                 <tr>
-                    <td>{{ $msg->first_name }}</td>
+                    <td>
+                        <a href="{{ route('messages.show', $msg->id) }}">
+                            {{ $msg->first_name }}
+                        </a>
+                    </td>
                     <td>{{ $msg->last_name }}</td>
                     <td>{{ $msg->email }}</td>
                     <td>{{ $msg->message }}</td>
+                    <td>
+                        <a href="{{ route('messages.edit', $msg->id) }}">
+                            Editar
+                        </a>
+                    </td>
                 </tr>
             @endforeach
         </tbody>

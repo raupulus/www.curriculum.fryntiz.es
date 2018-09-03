@@ -32,16 +32,6 @@ class MessagesController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        // return "Mostrar el formulario de creación de mensajes";
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -84,7 +74,8 @@ class MessagesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $msg = DB::table('messages')->where('id', $id)->first();
+        return view('messages.edit', compact('msg'));
     }
 
     /**

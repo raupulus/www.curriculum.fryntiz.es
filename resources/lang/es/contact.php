@@ -10,4 +10,5 @@ return [
     'description'           => 'Descripción',
     'registered'            => 'Registrado el día',
     'submit'                => 'Enviar Email',
+    'update'                => 'Actualizar Datos'
 ];

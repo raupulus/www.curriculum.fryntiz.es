@@ -87,7 +87,18 @@ class MessagesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // Actualizar datos
+        DB::table('messages')->where('id', $id)->update([
+            'first_name' => $request->input('first_name'),
+            'last_name' => $request->input('last_name'),
+            'subject' => $request->input('subject'),
+            'email' => $request->input('email'),
+            'message' => $request->input('message'),
+            'updated_at' => Carbon::now(),
+        ]);
+
+        // Redireccionar
+        return redirect()->route('messages.index');
     }
 
     /**
@@ -98,6 +109,6 @@ class MessagesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return 'asd';
     }
 }

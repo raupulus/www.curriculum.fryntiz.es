@@ -37,7 +37,25 @@ Route::get('contact', [
     'uses' => 'PagesController@contact'
 ]);
 
-Route::post('sendMail', 'PagesController@sendMail');
+//Route::post('sendMail', 'PagesController@sendMail');
+
+// Almacenar el mensaje en la base de datos
+Route::post('messages/store', [
+    'as' => 'messages.store',
+    'uses' => 'MessagesController@store'
+]);
+
+// Mostrar todos los mensajes
+Route::get('messages/index', [
+    'as' => 'messages.index',
+    'uses' => 'MessagesController@index'
+]);
+
+// Mostrar un mensaje por ID
+Route::get('messages/{id}', [
+    'as' => 'messages.show',
+    'uses' => 'MessagesController@show'
+]);
 
 /*
 Route::get('/', ['as' => 'home', function () {

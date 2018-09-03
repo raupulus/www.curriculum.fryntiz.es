@@ -11,6 +11,5 @@ E-mail: dev@fryntiz.es
     <ul>
         <li><a href="{{ route('contact') }}">Contact index</a></li>
         <li><a href="{{ route('messages.index') }}">Messages index</a></li>
-        <li>Elemento 2</li>
     </ul>
 </aside>

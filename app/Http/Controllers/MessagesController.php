@@ -72,7 +72,8 @@ class MessagesController extends Controller
      */
     public function show($id)
     {
-        return 'Este es el mensaje con el id: ' . $id;
+        $msg = DB::table('messages')->where('id', $id)->first();
+        return view('messages.show', compact('msg'));
     }
 
     /**

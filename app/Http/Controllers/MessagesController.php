@@ -17,6 +17,8 @@ use DB;
 
 use Carbon\Carbon;
 
+use App\Message;
+
 class MessagesController extends Controller
 {
     /**
@@ -26,7 +28,11 @@ class MessagesController extends Controller
      */
     public function index()
     {
-        $messages = DB::table('messages')->get();
+        // Obtener datos usando PDO
+        //$messages = DB::table('messages')->get();
+
+        // Obtener datos desde el modelo
+        $messages = Message::all();
 
         return view('messages.index', compact('messages'));
     }
@@ -39,7 +45,9 @@ class MessagesController extends Controller
      */
     public function store(Request $request)
     {
-        // Guardar mensaje en la DB
+
+        // Guardar mensaje en la DB mediante PDO
+        /*
         DB::table('messages')->insert([
             'first_name' => $request->input('first_name'),
             'last_name' => $request->input('last_name'),
@@ -49,6 +57,14 @@ class MessagesController extends Controller
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
+        */
+
+        // Quitar protección y permitir cualquier asignación masiva,
+        // Esto solo es útil para pruebas
+        // Model::unguard();
+
+        // Crear Mensaje con los datos recibidos que admitan asignación masiva
+        Message::create($request->all());
 
         // Redireccionar
         return redirect()->route('messages.index');
@@ -62,7 +78,16 @@ class MessagesController extends Controller
      */
     public function show($id)
     {
-        $msg = DB::table('messages')->where('id', $id)->first();
+        // Buscar el primer id coincidente mediante PDO
+        // $msg = DB::table('messages')->where('id', $id)->first();
+
+        // Buscar por "id" desde el modelo
+        // $msg = Message::find($id);
+
+        // Busca por "id" desde el modelo o falla con error 404 si no existe.
+        $msg = Message::findOrFail($id);
+
+
         return view('messages.show', compact('msg'));
     }
 
@@ -74,7 +99,11 @@ class MessagesController extends Controller
      */
     public function edit($id)
     {
-        $msg = DB::table('messages')->where('id', $id)->first();
+        // Buscar por id mediante PDO
+        //$msg = DB::table('messages')->where('id', $id)->first();
+
+        // Busca por "id" desde el modelo o falla con error 404 si no existe.
+        $msg = Message::findOrFail($id);
         return view('messages.edit', compact('msg'));
     }
 
@@ -87,7 +116,8 @@ class MessagesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        // Actualizar datos
+        /*
+        // Actualizar datos mediante PDO
         DB::table('messages')->where('id', $id)->update([
             'first_name' => $request->input('first_name'),
             'last_name' => $request->input('last_name'),
@@ -96,6 +126,10 @@ class MessagesController extends Controller
             'message' => $request->input('message'),
             'updated_at' => Carbon::now(),
         ]);
+        */
+
+        // Busca por "id" y actualizar.
+        $msg = Message::findOrFail($id)->update($request->all());
 
         // Redireccionar
         return redirect()->route('messages.index');
@@ -110,7 +144,10 @@ class MessagesController extends Controller
     public function destroy($id)
     {
         // Eliminar mensaje
-        DB::table('messages')->where('id', $id)->delete();
+        //DB::table('messages')->where('id', $id)->delete();
+
+        // Busca por "id" y actualizar.
+        Message::findOrFail($id)->delete();
 
         // Redireccionar
         return redirect()->route('messages.index');

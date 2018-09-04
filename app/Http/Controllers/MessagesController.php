@@ -43,7 +43,7 @@ class MessagesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(\App\Http\Requests\CreateMessageRequest $request)
     {
 
         // Guardar mensaje en la DB mediante PDO
@@ -66,8 +66,11 @@ class MessagesController extends Controller
         // Crear Mensaje con los datos recibidos que admitan asignación masiva
         Message::create($request->all());
 
-        // Redireccionar
-        return redirect()->route('messages.index');
+        //Session::flash('sucess_message', $msg);
+        return redirect()->route('messages.index')
+                         //->with('sucess_message', 'Procesando formulario')
+                         ->withCookie('sendmail', true, 2)  // Indica que envió un email
+                         ->withCookie('sendmail_at', time(), 2);
     }
 
     /**
@@ -114,7 +117,7 @@ class MessagesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(\App\Http\Requests\CreateMessageRequest $request, $id)
     {
         /*
         // Actualizar datos mediante PDO

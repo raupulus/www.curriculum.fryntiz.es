@@ -39,6 +39,10 @@ Route::get('contact', [
 
 //Route::post('sendMail', 'PagesController@sendMail');
 
+// Genera rutas automáticamente para "messages" desde el controlador
+Route::resource('messages', 'MessagesController');
+
+/*
 // Almacenar el mensaje en la base de datos
 Route::post('messages/store', [
     'as' => 'messages.store',
@@ -74,6 +78,8 @@ Route::delete('messages/{id}', [
     'as' => 'messages.destroy',
     'uses' => 'MessagesController@destroy'
 ]);
+
+*/
 
 /*
 Route::get('/', ['as' => 'home', function () {

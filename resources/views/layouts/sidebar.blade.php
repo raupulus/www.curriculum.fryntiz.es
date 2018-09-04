@@ -9,7 +9,23 @@ E-mail: dev@fryntiz.es
 <aside>
     Este es el sidebar
     <ul>
+
         <li><a href="{{ route('contact') }}">Contact index</a></li>
-        <li><a href="{{ route('messages.index') }}">Messages index</a></li>
+
+        @if (auth()->guest())
+            <li><a href="/login">Login</a></li>
+        @elseif (auth()->check())
+            <li>
+                <a href="{{ route('messages.index') }}">
+                    Messages index
+                </a>
+            </li>
+
+            <li>
+                <a href="/logout">
+                    Cerrar sesión de: {{ auth()->user()->name}}
+                </a>
+            </li>
+        @endif
     </ul>
 </aside>

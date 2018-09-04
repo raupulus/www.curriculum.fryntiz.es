@@ -10,6 +10,18 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// Temporal para crear usuario
+Route::get('test', function() {
+    $user = new App\User;
+    $user->name = 'Pepe';
+    $user->email = 'dev@fryntiz.es';
+    $user->password = bcrypt('1234');
+    $user->save();
+
+    return $user;
+});
+
 Route::get('/', ['as' => 'home', 'uses' => 'PagesController@home']);
 
 Route::get('objetive', [
@@ -41,6 +53,11 @@ Route::get('contact', [
 
 // Genera rutas automáticamente para "messages" desde el controlador
 Route::resource('messages', 'MessagesController');
+
+// Ruta hacia el login del usuario
+Route::get('login', 'Auth\LoginController@showLoginForm');
+Route::post('login', 'Auth\LoginController@login');
+Route::get('logout', 'Auth\LoginController@logout');
 
 /*
 // Almacenar el mensaje en la base de datos

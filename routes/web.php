@@ -54,10 +54,19 @@ Route::get('contact', [
 // Genera rutas automáticamente para "messages" desde el controlador
 Route::resource('messages', 'MessagesController');
 
-// Ruta hacia el login del usuario
-Route::get('login', 'Auth\LoginController@showLoginForm');
-Route::post('login', 'Auth\LoginController@login');
-Route::get('logout', 'Auth\LoginController@logout');
+// Rutas hacia el login y logout del usuario
+Route::get('login', [
+    'as'=> 'login',
+    'uses' => 'Auth\LoginController@showLoginForm'
+]);
+Route::post('login', [
+    'as'=> 'login',
+    'uses' => 'Auth\LoginController@login'
+]);
+Route::get('logout', [
+    'as'=> 'logout',
+    'uses' => 'Auth\LoginController@logout'
+]);
 
 /*
 // Almacenar el mensaje en la base de datos

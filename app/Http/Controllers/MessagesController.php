@@ -21,6 +21,12 @@ use App\Message;
 
 class MessagesController extends Controller
 {
+    public function __construct()
+    {
+        // Con este middleware solo permito a invitados enviar mensajes.
+        $this->middleware('auth', ['except' => ['store']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -54,7 +60,7 @@ class MessagesController extends Controller
             'subject' => $request->input('subject'),
             'email' => $request->input('email'),
             'message' => $request->input('message'),
-            'created_at' => Carbon::now(),
+            'created_at' => Carbon::now(),contact
             'updated_at' => Carbon::now(),
         ]);
         */
@@ -67,8 +73,8 @@ class MessagesController extends Controller
         Message::create($request->all());
 
         //Session::flash('sucess_message', $msg);
-        return redirect()->route('messages.index')
-                         //->with('sucess_message', 'Procesando formulario')
+        return redirect()->route('contact')
+                         ->with('sucess_message', 'Procesando formulario')
                          ->withCookie('sendmail', true, 2)  // Indica que envió un email
                          ->withCookie('sendmail_at', time(), 2);
     }

@@ -13,7 +13,7 @@ E-mail: dev@fryntiz.es
         <li><a href="{{ route('contact') }}">Contact index</a></li>
 
         @if (auth()->guest())
-            <li><a href="/login">Login</a></li>
+            <li><a href="{{ route('login') }}">Login</a></li>
         @elseif (auth()->check())
             <li>
                 <a href="{{ route('messages.index') }}">
@@ -22,7 +22,7 @@ E-mail: dev@fryntiz.es
             </li>
 
             <li>
-                <a href="/logout">
+                <a href="{{ route('logout') }}">
                     Cerrar sesión de: {{ auth()->user()->name}}
                 </a>
             </li>

@@ -18,12 +18,6 @@ E-mail: dev@fryntiz.es
 {{-- Palabras clave --}}
 @section('keywords', 'Messages, curriculum, curriculum online, Raúl Caro Pastorino, contact')
 
-<style>
-    table {
-        width: 100%;
-    }
-</style>
-
 {{-- Contenido de la sección --}}
 @section('content')
     <h2>Mensajes</h2>
@@ -59,7 +53,7 @@ E-mail: dev@fryntiz.es
                               action="{{ route('messages.destroy', $msg->id) }}">
                             {!! csrf_field() !!}
                             {!! method_field('DELETE') !!}
-                            
+
                             <button type="submit">
                                 {{ trans('contact.delete') }}
                             </button>

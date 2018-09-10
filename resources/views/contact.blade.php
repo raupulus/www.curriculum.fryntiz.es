@@ -1,11 +1,11 @@
-<!--
+{{--
 @author Raúl Caro Pastorino
 @copyright Copyright (c) 2018 Raúl Caro Pastorino
 @license https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
 Author Web: https://fryntiz.es
 E-mail: dev@fryntiz.es
--->
+--}}
 
 @extends('layouts.template')
 
@@ -20,14 +20,6 @@ E-mail: dev@fryntiz.es
 
 {{-- Contenido de la sección --}}
 @section('content')
-  <style>
-    .formError {
-      color: red;
-      font-size: 0.8em;
-      font-weight: bold;
-    }
-  </style>
-
   <h2>{{ trans('contact.title') }}</h2>
   <form method="POST" action="{{ route('messages.store') }}">
     {{-- <input type="hidden" name="_token" value="{{ csrf_token() }}" /> --}}

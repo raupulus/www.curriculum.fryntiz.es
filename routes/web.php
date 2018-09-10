@@ -41,7 +41,7 @@ Route::get('education', [
 
 Route::get('skills', [
     'as' => 'skills',
-    'uses' => 'PagesController@home'
+    'uses' => 'PagesController@skills'
 ]);
 
 Route::get('contact', [

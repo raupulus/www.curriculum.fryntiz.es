@@ -1,0 +1,35 @@
+// Color de Backround
+$h_back: #ff0000;
+$h_logo: url('');
+$h_backimg: url('');
+
+// Colores de menú activo
+$h_active: #ffffff;
+$h_activeback: #0056b3;
+$h_activeborder: #0069D9;
+
+// Colores de menú inactivo
+$h_inactive: green;
+$h_inactiveback: transparent;
+$h_inactiveborder: orange;
+
+/*******************************************
+                  Título
+********************************************/
+
+/*******************************************
+              Menú de navegación
+********************************************/
+.menuActive {
+  font-weight: bold;
+  color: $h_active;
+  background-color: $h_activeback;
+  border-bottom: 3px solid $h_activeborder;
+}
+
+.menuInactive {
+  font-weight: bold;
+  color: $h_inactive;
+  background-color: $h_inactiveback;
+  border-bottom: 3px solid $h_inactiveborder;
+}

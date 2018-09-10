@@ -20,29 +20,31 @@ E-mail: dev@fryntiz.es
   </head>
 
   <body>
-    <div id="boxinfo">
-        Caja de información:
-        <br />
-    </div>
+    <div id="generalbox" class="row">
+        <div id="boxinfo">
+            Caja de información:
+            <br />
+        </div>
 
-    <div id="boxheader">
-        @include('layouts.header')
-    </div>
+        <div id="boxheader">
+            @include('layouts.header')
+        </div>
 
-    <div id="boxsidebar">
-        @include('layouts.sidebar')
-    </div>
+        <div id="boxsidebar" class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+            @include('layouts.sidebar')
+        </div>
 
-    <div id="boxcontent">
-        @if(Session::has('sucess_message'))
-            {{ Session::get('sucess_message') }}
-        @else
-            @yield('content')
-        @endif
-    </div>
+        <div id="boxcontent" class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+            @if(Session::has('sucess_message'))
+                {{ Session::get('sucess_message') }}
+            @else
+                @yield('content')
+            @endif
+        </div>
 
-    <div id="boxfooter">
-        @include('layouts.footer')
+        <div id="boxfooter">
+            @include('layouts.footer')
+        </div>
     </div>
   </body>
 </html>

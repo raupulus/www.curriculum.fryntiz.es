@@ -34,8 +34,26 @@ header {
 }
 
 /*******************************************
+                  Logotipo
+********************************************/
+#boxlogo {
+  text-align: center;
+}
+
+#logotipo {
+  padding: 5px;
+}
+
+#logotipo > img {
+  margin: auto;
+}
+
+/*******************************************
                   Título
 ********************************************/
+#sitetitle {
+  color: $color1;
+}
 
 /*******************************************
               Menú de navegación
@@ -61,27 +79,10 @@ header {
 
 
 
-
-#boxlogo {
-  text-align: center;
-}
-
-#logotipo {
-  padding: 5px;
-}
-
-#logotipo > img {
-  margin: auto;
-}
-
-#sitetitle {
-  color: #fff;
-}
-
-#main nav ul li a {
+header nav ul li a {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: $color1;
   font-weight: bold;
   text-align: center;
   background: rgb(0, 86, 179);
@@ -119,7 +120,7 @@ header {
   .col-lg-1 {width: 8.33333333%;}
   .col-lg-0{display:none;}
 
-  #main nav ul li a {
+  header nav ul li a {
     margin:30% 5px;
     font-size:14px;
   }
@@ -155,7 +156,7 @@ header {
   .col-md-1{width: 8.33333333%;}
   .col-md-0{display:none;}
 
-  #main nav ul li a {
+  header nav ul li a {
     margin:30% 5px;
     font-size:12px;
   }
@@ -189,9 +190,9 @@ header {
   .col-sm-1{width: 8.33333333%;}
   .col-sm-0{display:none;}
 
-  #main nav ul li a {
+  header nav ul li a {
     padding: 5px;
-    margin: 10px 2px;
+    margin: 6px 0;
     font-size: 16px;
   }
 
@@ -223,7 +224,7 @@ header {
   .col-xs-1{width: 8.33333333%;}
   .col-xs-0{display:none;}
 
-  #main nav ul li a {
+  header nav ul li a {
     margin:0px;
     font-size:14px;
     border-bottom:1px solid #444;

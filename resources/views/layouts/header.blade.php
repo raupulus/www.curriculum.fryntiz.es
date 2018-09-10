@@ -14,50 +14,70 @@ E-mail: dev@fryntiz.es
      * @param  String $url Ruta URL a comparar.
      * @return String      Nombre de la clase que se aplicará.
      */
-    function activeMenu($url) {
+    function activeMenu($url):String
+    {
         return request()->is($url) ? 'menuActive' : 'menuInactive';
     }
 
     /* Array con datos para cada entrada del menú */
     $datosLinks = [
-        [
+        [   // Inicio
             'section' => trans('sections.home'),
-            'url' => 'home',
+            'url' => '/',
             'link' => route('home')
         ],
-        [
+        [   // Objetivos
             'section' => trans('sections.objetive'),
             'url' => 'objetive',
             'link' => route('objetive')
         ],
-        [
+        [   // Experiencia
             'section' => trans('sections.experience'),
             'url' => 'experience',
             'link' => route('experience')
         ],
-        [
+        [   // Educación
             'section' => trans('sections.education'),
             'url' => 'education',
             'link' => route('education')
         ],
-        [
+        [   // Habilidades
             'section' => trans('sections.skills'),
             'url' => 'skills',
             'link' => route('skills')
         ],
-    ]
+    ];
+
+    // Idiomas
+    $datalang = [
+        [
+            'id' => 'lang_spanish',
+            'abb' => 'es',
+            'img' => '/assets/img/aside/es.png',
+            'title' => 'Idioma Español',
+            'alt' => 'Idioma Español'
+        ],
+        [
+            'id' => 'lang_english',
+            'abb' => 'en',
+            'img' => '/assets/img/aside/en.png',
+            'title' => 'Language English',
+            'alt' => 'Language English'
+        ],
+    ];
 ?>
 
 <div id="boxheader" class="content-fluid">
     <div id="topbar" class="row">
-      <div class="boxlanguage">
-        <section id="spanish" (click)="language('es')">
-          <img src="/assets/img/aside/es.png" title="Idioma Español" alt="Idioma Español" />es
-        </section>
-
-        <section id="english" (click)="language('en')">
-          <img src="/assets/img/aside/en.png" title="Idioma Inglés" alt="Idioma Inglés" />en
-        </section>
+        <div class="boxlanguage">
+            @foreach ($datalang as $lang)
+                <section id="{{ $lang['id'] }}">
+                    <img src="{{ $lang['img'] }}"
+                         title="{{ $lang['title'] }}"
+                         alt="{{ $lang['alt'] }}" />
+                    {{ $lang['abb'] }}
+                </section>
+            @endforeach
       </div>
     </div>
 
@@ -75,6 +95,7 @@ E-mail: dev@fryntiz.es
           <span class="fa fa-bars"></span>
         </div>
 
+        {{-- Enlaces de navegación --}}
         <nav class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
             <ul>
                 @foreach ($datosLinks as $sectionlink)

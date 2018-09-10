@@ -21,11 +21,6 @@ E-mail: dev@fryntiz.es
 
   <body>
     <div id="generalbox" class="row">
-        <div id="boxinfo">
-            Caja de información:
-            <br />
-        </div>
-
         <div id="boxheader">
             @include('layouts.header')
         </div>

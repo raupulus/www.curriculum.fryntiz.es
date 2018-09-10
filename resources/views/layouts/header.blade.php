@@ -68,18 +68,68 @@ E-mail: dev@fryntiz.es
 ?>
 
 <div id="boxheader" class="content-fluid">
-    <div id="topbar" class="row">
-        <div class="boxlanguage">
-            @foreach ($datalang as $lang)
-                <section id="{{ $lang['id'] }}">
-                    <img src="{{ $lang['img'] }}"
-                         title="{{ $lang['title'] }}"
-                         alt="{{ $lang['alt'] }}" />
-                    {{ $lang['abb'] }}
-                </section>
-            @endforeach
-      </div>
-    </div>
+    {{-- TopBar --}}
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="https://fryntiz.es" target="_blank">
+                            {{ trans('sections.portal') }}
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            {{ trans('sections.downloads') }}
+                        </a>
+                    </li>
+                </ul>
+
+                <div id="topbar" class="row">
+                    <div class="boxlanguage">
+                        @foreach ($datalang as $lang)
+                            <section id="{{ $lang['id'] }}">
+                                <img src="{{ $lang['img'] }}"
+                                     title="{{ $lang['title'] }}"
+                                     alt="{{ $lang['alt'] }}" />
+                                {{ $lang['abb'] }}
+                            </section>
+                        @endforeach
+                  </div>
+                </div>
+
+                {{-- Menú a la Derecha --}}
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="{{ route('contact') }}">
+                            {{ trans('sections.contact') }}
+                        </a>
+                    </li>
+
+                    @if (auth()->guest())
+                        <li>
+                            <a href="{{ route('login') }}">
+                                {{ trans('sections.login') }}
+                            </a>
+                        </li>
+                        @elseif (auth()->check())
+                        <li>
+                            <a href="{{ route('messages.index') }}">
+                                {{ trans('sections.messages') }}
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ route('logout') }}">
+                                Cerrar sesión de: {{ auth()->user()->name}}
+                            </a>
+                        </li>
+                    @endif
+                </ul>
+            </div>
+        </div>
+    </nav>{{-- /TopBar --}}
 
     <header class="row">
         {{-- Caja con el título y logotipo --}}

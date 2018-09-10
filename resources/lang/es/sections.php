@@ -5,5 +5,10 @@ return [
     'objetive' => 'Objetivos',
     'experience' => 'Experiencia',
     'education' => 'Educación',
-    'skills' => 'Habilidades'
+    'skills' => 'Habilidades',
+    'contact' => 'Contacto',
+    'messages' => 'Mensajes',
+    'login' => 'Entrar',
+    'portal' => 'Mi portal',
+    'downloads' => 'Descargas',
 ];

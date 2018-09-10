@@ -53,14 +53,14 @@ E-mail: dev@fryntiz.es
         [
             'id' => 'lang_spanish',
             'abb' => 'es',
-            'img' => '/assets/img/aside/es.png',
+            'img' => '/images/languages/es.png',
             'title' => 'Idioma Español',
             'alt' => 'Idioma Español'
         ],
         [
             'id' => 'lang_english',
             'abb' => 'en',
-            'img' => '/assets/img/aside/en.png',
+            'img' => '/images/languages/en.png',
             'title' => 'Language English',
             'alt' => 'Language English'
         ],
@@ -86,18 +86,16 @@ E-mail: dev@fryntiz.es
                     </li>
                 </ul>
 
-                <div id="topbar" class="row">
-                    <div class="boxlanguage">
-                        @foreach ($datalang as $lang)
-                            <section id="{{ $lang['id'] }}">
-                                <img src="{{ $lang['img'] }}"
-                                     title="{{ $lang['title'] }}"
-                                     alt="{{ $lang['alt'] }}" />
-                                {{ $lang['abb'] }}
-                            </section>
-                        @endforeach
-                  </div>
-                </div>
+                <ul id="topbar" class="nav navbar-nav navbar-right boxlanguage">
+                    @foreach ($datalang as $lang)
+                        <li id="{{ $lang['id'] }}">
+                            <img src="{{ asset($lang['img']) }}"
+                                 title="{{ $lang['title'] }}"
+                                 alt="{{ $lang['alt'] }}" />
+                            {{ $lang['abb'] }}
+                        </li>
+                    @endforeach
+                </ul>
 
                 {{-- Menú a la Derecha --}}
                 <ul class="nav navbar-nav navbar-right">
@@ -135,7 +133,9 @@ E-mail: dev@fryntiz.es
         {{-- Caja con el título y logotipo --}}
         <div id="boxlogo" class="align-middle col-lg-5 col-md-12 col-sm-12 col-xs-12">
             <figure id="logotipo" class="col-lg-4">
-                <img src="/img.jpg" alt="Logo" />
+                <img src="{{ asset('/images/logotipo.png') }}"
+                     alt="Logo"
+                     title="Logo" />
             </figure>
             <h1 id="sitetitle" class="col-lg-8">@yield('title')</h1>
         </div>
@@ -149,8 +149,8 @@ E-mail: dev@fryntiz.es
         <nav class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
             <ul>
                 @foreach ($datosLinks as $sectionlink)
-                    <li>
-                        <a class="col-lg-2 col-md-2 col-sm-12 col-xs-12 {{ activeMenu($sectionlink['url']) }}"
+                    <li class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <a class="{{ activeMenu($sectionlink['url']) }}"
                            href="{{ $sectionlink['link'] }}">
                             {{ $sectionlink['section'] }}
                         </a>

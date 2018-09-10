@@ -10,58 +10,59 @@ E-mail: dev@fryntiz.es
 @extends('layouts.template')
 
 {{-- Título de la página --}}
-@section('title', 'Contact')
+@section('title', trans('titles.contact'))
 
 {{-- Descripción --}}
-@section('description', 'Contact')
+@section('description', trans('contact.description'))
 
 {{-- Palabras clave --}}
-@section('keywords', 'curriculum, curriculum online, Raúl Caro Pastorino, contact')
+@section('keywords', trans('contact.keywords'))
 
 {{-- Contenido de la sección --}}
 @section('content')
   <h2>{{ trans('contact.title') }}</h2>
+  <h3>{{ trans('contact.description') }}</h3>
   <form method="POST" action="{{ route('messages.store') }}">
     {{-- <input type="hidden" name="_token" value="{{ csrf_token() }}" /> --}}
     {!! csrf_field() !!}
 
     <div>
       <div>
-        <label for="first_name">{{ trans('contact.first_name') }}</label>
+        <label for="first_name">{{ trans('contact.fields.first_name') }}</label>
         <input id="first_name" type="text" name="first_name"
                               value="{{ old('first_name') }}" />
         {!! $errors->first('first_name', '<span class="formError">:message</span>') !!}
       </div>
 
       <div>
-        <label for="last_name">{{ trans('contact.last_name') }}</label>
+        <label for="last_name">{{ trans('contact.fields.last_name') }}</label>
         <input id="last_name" type="text" name="last_name"
                                value="{{ old('last_name') }}" />
         {!! $errors->first('last_name', '<span class="formError">:message</span>') !!}
       </div>
 
       <div>
-        <label for="subject">{{ trans('contact.subject') }}</label>
+        <label for="subject">{{ trans('contact.fields.subject') }}</label>
         <input id="subject" type="text" name="subject"
                             value="{{ old('subject') }}" />
         {!! $errors->first('subject', '<span class="formError">:message</span>') !!}
       </div>
 
       <div>
-        <label for="email">{{ trans('contact.email') }}</label>
+        <label for="email">{{ trans('contact.fields.email') }}</label>
         <input id="email" type="text" name="email"
                           value="{{ old('email') }}" />
         {!! $errors->first('email', '<span class="formError">:message</span>') !!}
       </div>
 
       <div>
-        <label for="message">{{ trans('contact.message') }}</label>
+        <label for="message">{{ trans('contact.fields.message') }}</label>
         <textarea id="message" name="message">{{ old('message') }}</textarea>
         {!! $errors->first('message', '<span class="formError">:message</span>') !!}
       </div>
 
       <div>
-        <label for="registered">{{ trans('contact.registered') }}</label>
+        <label for="registered">{{ trans('contact.fields.registered') }}</label>
         <input id="message" type="text" name="registered" value="{{ date('Y-m-d H:i:s') }}" />
       </div>
     </div>
@@ -78,9 +79,9 @@ E-mail: dev@fryntiz.es
             ?>
             Tiempo restante para enviar de nuevo: {{ $t_restante_mail }} segundos
             <br />
-            <input class="btn btn-primary" type="submit" value="{{ trans('contact.submit') }}" disabled />
+            <input class="btn btn-primary" type="submit" value="{{ trans('contact.fields.submit') }}" disabled />
         @else
-            <input class="btn btn-primary" type="submit" value="{{ trans('contact.submit') }}" />
+            <input class="btn btn-primary" type="submit" value="{{ trans('contact.fields.submit') }}" />
         @endif
     </div>
   </form>

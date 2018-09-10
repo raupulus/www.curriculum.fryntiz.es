@@ -9,6 +9,6 @@ return [
     'contact' => 'Contacto',
     'messages' => 'Mensajes',
     'login' => 'Entrar',
-    'portal' => 'Mi portal',
+    'portal' => 'Mi Portal',
     'downloads' => 'Descargas',
 ];

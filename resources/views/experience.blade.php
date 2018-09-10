@@ -10,15 +10,22 @@ E-mail: dev@fryntiz.es
 @extends('layouts.template')
 
 {{-- Título de la página --}}
-@section('title', 'Experience')
+@section('title', trans('titles.experience'))
 
 {{-- Descripción --}}
-@section('description', 'Experience')
+@section('description', trans('experience.description'))
 
 {{-- Palabras clave --}}
-@section('keywords', 'curriculum, curriculum online, Raúl Caro Pastorino')
+@section('keywords', trans('experience.keywords'))
 
 {{-- Contenido de la sección --}}
 @section('content')
-    <h2>contenido</h2>
+    <h2>{{ trans('experience.title') }}</h2>
+    <h3>{{ trans('experience.description') }}</h3>
+
+    <div>
+        <section>
+            Contenido
+        </section>
+    </div>
 @stop

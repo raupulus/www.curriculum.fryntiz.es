@@ -70,13 +70,23 @@ header {
   border-bottom: 3px solid $h_inactiveborder;
 }
 
+/*******************************************
+              Submenú de navegación
+********************************************/
+.subMenuActive {
+  font-weight: bold;
+  color: $h_active;
+  background-color: $h_activeback;
+  border-bottom: 3px solid $h_activeborder;
+}
 
+.subMenuInactive {
+  font-weight: bold;
+}
 
-
-
-
-
-
+/*******************************************
+              Navegación
+********************************************/
 header nav ul li a {
   display: block;
   padding: 10px;

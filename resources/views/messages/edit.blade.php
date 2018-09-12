@@ -20,7 +20,7 @@ E-mail: dev@fryntiz.es
 
 {{-- Contenido de la sección --}}
 @section('content')
-    <h2>Edit Message {{ $msg->id }}, {{ $msg->first_name }}</h2>
+    <h2>{{ trans('contact.edit') }} {{ $msg->id }}, {{ $msg->first_name }}</h2>
 
     <form method="POST" action="{{ route('messages.update', $msg->id) }}">
         {!! method_field('PUT') !!}
@@ -28,49 +28,67 @@ E-mail: dev@fryntiz.es
       {!! csrf_field() !!}
 
       <div>
-        <div>
-          <label for="first_name">{{ trans('contact.first_name') }}</label>
-          <input id="first_name" type="text" name="first_name"
-                                value="{{ $msg->first_name }}" />
+        <div class="form-group">
+          <label for="first_name">{{ trans('contact.fields.first_name') }}</label>
+          <input id="first_name"
+                 class="form-control"
+                 type="text"
+                 name="first_name"
+                 value="{{ $msg->first_name }}" />
           {!! $errors->first('first_name', '<span class="formError">:message</span>') !!}
         </div>
 
-        <div>
-          <label for="last_name">{{ trans('contact.last_name') }}</label>
-          <input id="last_name" type="text" name="last_name"
-                                 value="{{ $msg->last_name }}" />
+        <div class="form-group">
+          <label for="last_name">{{ trans('contact.fields.last_name') }}</label>
+          <input id="last_name"
+                 class="form-control"
+                 type="text"
+                 name="last_name"
+                 value="{{ $msg->last_name }}" />
           {!! $errors->first('last_name', '<span class="formError">:message</span>') !!}
         </div>
 
-        <div>
-          <label for="subject">{{ trans('contact.subject') }}</label>
-          <input id="subject" type="text" name="subject"
-                              value="{{ $msg->subject }}" />
+        <div class="form-group">
+          <label for="subject">{{ trans('contact.fields.subject') }}</label>
+          <input id="subject"
+                 class="form-control"
+                 type="text"
+                 name="subject"
+                 value="{{ $msg->subject }}" />
           {!! $errors->first('subject', '<span class="formError">:message</span>') !!}
         </div>
 
-        <div>
-          <label for="email">{{ trans('contact.email') }}</label>
-          <input id="email" type="text" name="email"
-                            value="{{ $msg->email }}" />
+        <div class="form-group">
+          <label for="email">{{ trans('contact.fields.email') }}</label>
+          <input id="email"
+                 class="form-control"
+                 type="text"
+                 name="email"
+                 value="{{ $msg->email }}" />
           {!! $errors->first('email', '<span class="formError">:message</span>') !!}
         </div>
 
-        <div>
-          <label for="message">{{ trans('contact.message') }}</label>
-          <textarea id="message" name="message">{{ $msg->message }}</textarea>
+        <div class="form-group">
+          <label for="message">{{ trans('contact.fields.message') }}</label>
+          <textarea id="message"
+                    class="form-control"
+                    name="message">{{ $msg->message }}</textarea>
           {!! $errors->first('message', '<span class="formError">:message</span>') !!}
         </div>
 
-        <div>
-          <label for="registered">{{ trans('contact.registered') }}</label>
-          <input id="message" type="text" name="registered" value="{{ $msg->created_at }}" />
+        <div class="form-group">
+          <label for="registered">{{ trans('contact.fields.registered') }}</label>
+          <input id="message"
+                  class="form-control"
+                  type="text"
+                  name="registered"
+                  value="{{ $msg->created_at }}" />
         </div>
       </div>
 
       {{-- Solo se permite enviar un formulario cada 2 minutos --}}
       <div id="sendEmail">
-          <input class="btn btn-primary" type="submit" value="{{ trans('contact.update') }}" />
+          <input class="btn btn-primary" type="submit" value="{{ trans('contact.fields.update') }}" />
       </div>
     </form>
 @stop

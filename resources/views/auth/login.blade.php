@@ -21,13 +21,18 @@ E-mail: dev@fryntiz.es
 {{-- Contenido de la sección --}}
 @section('content')
     <h2>Login</h2>
-    <form method="POST" action="/login">
+    <form method="POST" action="/login" class="form-inline">
         {!! csrf_field() !!}
-        <input type="email" name="email" placeholder="Email" />
-        <input type="password" name="password" placeholder="Password" />
-        <input type="submit" value="Entrar" />
+        <div class="form-group">
+            {{-- <label for="email">Email</label> --}}
+            <input class="form-control" type="email" name="email" placeholder="Email" />
+        </div>
+
+        <div class="form-group">
+            {{-- <label for="password">Password</label> --}}
+            <input class="form-control" type="password" name="password" placeholder="Password" />
+        </div>
+
+        <input class="btn btn-primary" type="submit" value="Entrar" />
     </form>
-
-    <br />
-
 @stop

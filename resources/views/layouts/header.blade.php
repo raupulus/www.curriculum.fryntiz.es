@@ -19,6 +19,18 @@ E-mail: dev@fryntiz.es
         return request()->is($url) ? 'menuActive' : 'menuInactive';
     }
 
+    /**
+     * Comprueba si la url recibida es la actual y devuelve la clase css que se
+     * aplicará en cada situación para el submenú.
+     * @param  String $url Ruta URL a comparar.
+     * @return String      Nombre de la clase que se aplicará.
+     */
+    function activeSubMenu($url):String
+    {
+        return request()->is($url) ? 'subMenuActive' : 'subMenuInactive';
+    }
+
+
     /* Array con datos para cada entrada del menú */
     $datosLinks = [
         [   // Inicio
@@ -90,8 +102,8 @@ E-mail: dev@fryntiz.es
                         </a>
                     </li>
 
-                    <li>
-                        <a href="#">
+                    <li class="{{ activeSubMenu('downloads') }}">
+                        <a href="{{-- route('downloads') --}}">
                             {{ trans('sections.downloads') }}
                         </a>
                     </li>
@@ -110,20 +122,20 @@ E-mail: dev@fryntiz.es
 
                 {{-- Menú a la Derecha --}}
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
+                    <li class="{{ activeSubMenu('contact') }}">
                         <a href="{{ route('contact') }}">
                             {{ trans('sections.contact') }}
                         </a>
                     </li>
 
                     @if (auth()->guest())
-                        <li>
+                        <li class="{{ activeSubMenu('login') }}">
                             <a href="{{ route('login') }}">
                                 {{ trans('sections.login') }}
                             </a>
                         </li>
                         @elseif (auth()->check())
-                        <li>
+                        <li class="{{ activeSubMenu('messages*') }}">
                             <a href="{{ route('messages.index') }}">
                                 {{ trans('sections.messages') }}
                             </a>

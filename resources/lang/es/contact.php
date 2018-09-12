@@ -6,6 +6,7 @@ return [
                                 formulario o directamente a: dev@fryntiz.es',
     'keywords'              => 'curriculum, curriculum online, Raúl Caro
                                 Pastorino, contact, contactar',
+    'edit'                  => 'Editar Formulario',
     'fields' => [
         'first_name'            => 'Nombre',
         'last_name'             => 'Apellido',

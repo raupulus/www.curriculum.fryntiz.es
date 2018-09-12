@@ -70,6 +70,17 @@ E-mail: dev@fryntiz.es
 <div id="boxheader" class="content-fluid">
     {{-- TopBar --}}
     <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button"
+                    class="navbar-toggle"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -86,7 +97,7 @@ E-mail: dev@fryntiz.es
                     </li>
                 </ul>
 
-                <ul id="topbar" class="nav navbar-nav navbar-right boxlanguage">
+                <ul class="nav navbar-nav navbar-center boxlanguage">
                     @foreach ($datalang as $lang)
                         <li id="{{ $lang['id'] }}">
                             <img src="{{ asset($lang['img']) }}"

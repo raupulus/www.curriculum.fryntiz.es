@@ -70,3 +70,9 @@ body {
   width: 20px;
   height: 20px;
 }
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}

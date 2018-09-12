@@ -27,48 +27,66 @@ E-mail: dev@fryntiz.es
     {!! csrf_field() !!}
 
     <div>
-      <div>
+      <div class="form-group">
         <label for="first_name">{{ trans('contact.fields.first_name') }}</label>
-        <input id="first_name" type="text" name="first_name"
-                              value="{{ old('first_name') }}" />
+        <input id="first_name"
+               class="form-control"
+               type="text"
+               name="first_name"
+               value="{{ old('first_name') }}" />
         {!! $errors->first('first_name', '<span class="formError">:message</span>') !!}
       </div>
 
-      <div>
+      <div class="form-group">
         <label for="last_name">{{ trans('contact.fields.last_name') }}</label>
-        <input id="last_name" type="text" name="last_name"
-                               value="{{ old('last_name') }}" />
+        <input id="last_name"
+               class="form-control"
+               type="text"
+               name="last_name"
+               value="{{ old('last_name') }}" />
         {!! $errors->first('last_name', '<span class="formError">:message</span>') !!}
       </div>
 
-      <div>
+      <div class="form-group">
         <label for="subject">{{ trans('contact.fields.subject') }}</label>
-        <input id="subject" type="text" name="subject"
-                            value="{{ old('subject') }}" />
+        <input id="subject"
+               class="form-control"
+               type="text"
+               name="subject"
+               value="{{ old('subject') }}" />
         {!! $errors->first('subject', '<span class="formError">:message</span>') !!}
       </div>
 
-      <div>
+      <div class="form-group">
         <label for="email">{{ trans('contact.fields.email') }}</label>
-        <input id="email" type="text" name="email"
-                          value="{{ old('email') }}" />
+        <input id="email"
+               class="form-control"
+               type="text"
+               name="email"
+               value="{{ old('email') }}" />
         {!! $errors->first('email', '<span class="formError">:message</span>') !!}
       </div>
 
-      <div>
+      <div class="form-group">
         <label for="message">{{ trans('contact.fields.message') }}</label>
-        <textarea id="message" name="message">{{ old('message') }}</textarea>
+        <textarea id="message"
+                  class="form-control"
+                  name="message">{{ old('message') }}</textarea>
         {!! $errors->first('message', '<span class="formError">:message</span>') !!}
       </div>
 
-      <div>
+      <div class="form-group">
         <label for="registered">{{ trans('contact.fields.registered') }}</label>
-        <input id="message" type="text" name="registered" value="{{ date('Y-m-d H:i:s') }}" />
+        <input id="message"
+               class="form-control"
+               type="text"
+               name="registered"
+               value="{{ date('Y-m-d H:i:s') }}" />
       </div>
     </div>
 
     {{-- Solo se permite enviar un formulario cada 2 minutos --}}
-    <div id="sendEmail">
+    <div id="sendEmail" class="form-group">
         @if( (int)Request::cookie('sendmail') === 1 )
             Se ha enviado un email hace menos de 2 minutos
             <br />

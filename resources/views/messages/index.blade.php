@@ -22,7 +22,7 @@ E-mail: dev@fryntiz.es
 @section('content')
     <h2>Mensajes</h2>
 
-    <table>
+    <table class="table">
         <thead>
             <tr>
                 <th>Nombre</th>
@@ -45,8 +45,8 @@ E-mail: dev@fryntiz.es
                     <td>{{ $msg->email }}</td>
                     <td>{{ $msg->message }}</td>
                     <td>
-                        <a href="{{ route('messages.edit', $msg->id) }}">
-                            {{ trans('contact.edit') }}
+                        <a class="btn btn-info btn-xs" href="{{ route('messages.edit', $msg->id) }}">
+                            {{ trans('contact.fields.edit') }}
                         </a>
 
                         <form method="POST"
@@ -54,8 +54,8 @@ E-mail: dev@fryntiz.es
                             {!! csrf_field() !!}
                             {!! method_field('DELETE') !!}
 
-                            <button type="submit">
-                                {{ trans('contact.delete') }}
+                            <button class="btn btn-danger btn-xs" type="submit">
+                                {{ trans('contact.fields.delete') }}
                             </button>
                     </td>
                 </tr>

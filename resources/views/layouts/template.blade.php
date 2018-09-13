@@ -16,7 +16,8 @@ E-mail: dev@fryntiz.es
     <meta name="author" content="Raúl Caro Pastorino" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>@yield('title')</title>
-    <link rel="stylesheet" type="text/css" href="/css/app.css" />
+    <link rel="stylesheet" type="text/css" href="{{ mix('/css/app.css') }}" />
+    <script type="text/javascript" src="{{ mix('/js/beforeload.js') }}"></script>
   </head>
 
   <body>
@@ -41,5 +42,8 @@ E-mail: dev@fryntiz.es
             @include('layouts.footer')
         </div>
     </div>
+
+    <script type="text/javascript" src="{{ mix('/js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ mix('/js/scripts.js') }}"></script>
   </body>
 </html>

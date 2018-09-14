@@ -21,6 +21,7 @@ mix.js('resources/assets/js/beforeload.js', 'public/js')
 // Deshabilitar Notificaciones
 //mix.disableNotifications();
 
+/* Activar Browser Sync para depurar y sincronizar Navegadores/Equipos */
 mix.browserSync({
     proxy: '127.0.0.1:8000',
 })

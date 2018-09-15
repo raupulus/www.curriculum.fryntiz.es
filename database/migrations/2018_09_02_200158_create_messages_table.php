@@ -13,6 +13,7 @@ class CreateMessagesTable extends Migration
      */
     public function up()
     {
+        // Creo el esquema de datos para mensajes
         Schema::create('messages', function (Blueprint $table) {
             $table->increments('id');
             $table->string('first_name');

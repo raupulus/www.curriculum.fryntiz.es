@@ -13,14 +13,19 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+        // Creo el esquema de usuarios
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('role');
             $table->string('email')->unique();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
         });
+
+        // Creo un usuario administrador
+        $this->createAdmin();
     }
 
     /**
@@ -31,5 +36,22 @@ class CreateUsersTable extends Migration
     public function down()
     {
         Schema::dropIfExists('users');
+    }
+
+    /**
+     * Creo un nuevo usuario con el rol administrador tomando los valores del
+     * archivo ".env" para sus datos.
+     * @return App\User Devuelve el usuario insertado en la tabla
+     */
+    private function createAdmin()
+    {
+        $user = new App\User;
+        $user->name = env('USER_ADMIN_NAME');
+        $user->role = 'admin';
+        $user->email = env('USER_ADMIN_EMAIL');
+        $user->password = bcrypt(env('USER_ADMIN_PASSWORD'));
+        $user->save();
+
+        return $user;
     }
 }

@@ -11,17 +11,6 @@
 |
 */
 
-// Temporal para crear usuario
-Route::get('test', function() {
-    $user = new App\User;
-    $user->name = 'Pepe';
-    $user->email = 'dev@fryntiz.es';
-    $user->password = bcrypt('1234');
-    $user->save();
-
-    return $user;
-});
-
 Route::get('/', ['as' => 'home', 'uses' => 'PagesController@home']);
 
 Route::get('objetive', [

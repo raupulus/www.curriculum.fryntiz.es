@@ -135,6 +135,12 @@ E-mail: dev@fryntiz.es
                             </a>
                         </li>
                         @elseif (auth()->check())
+                        <li class="{{ activeSubMenu('users*') }}">
+                            <a href="{{ route('users.index') }}">
+                                {{ trans('sections.users') }}
+                            </a>
+                        </li>
+
                         <li class="{{ activeSubMenu('messages*') }}">
                             <a href="{{ route('messages.index') }}">
                                 {{ trans('sections.messages') }}

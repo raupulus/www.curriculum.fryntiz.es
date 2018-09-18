@@ -57,6 +57,11 @@ Route::get('logout', [
     'uses' => 'Auth\LoginController@logout'
 ]);
 
+
+// Ruta hacia todos los usuarios
+Route::resource('users', 'UsersController');
+
+
 /*
 // Almacenar el mensaje en la base de datos
 Route::post('messages/store', [

@@ -11,4 +11,5 @@ return [
     'login' => 'Entrar',
     'portal' => 'Mi Portal',
     'downloads' => 'Descargas',
+    'users' => 'Usuarios',
 ];

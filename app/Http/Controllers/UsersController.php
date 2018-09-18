@@ -8,7 +8,8 @@ class UsersController extends Controller
 {
     function __construct()
     {
-        $this->middleware('auth');
+        // Obligo a estar autenticado y tener el rol admin
+        $this->middleware(['auth', 'roles:admin']); // Con los dos puntos pasamos parámetros
     }
 
     /**

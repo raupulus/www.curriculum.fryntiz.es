@@ -137,7 +137,7 @@ E-mail: dev@fryntiz.es
 
                     @elseif (auth()->check())
                         {{-- Solo administradores pueden ver usuarios --}}
-                        @if (auth()->user()->role === 'admin')
+                        @if (auth()->user()->hasRoles(['admin']))
                             <li class="{{ activeSubMenu('users*') }}">
                                 <a href="{{ route('users.index') }}">
                                     {{ trans('sections.users') }}

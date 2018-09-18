@@ -134,12 +134,16 @@ E-mail: dev@fryntiz.es
                                 {{ trans('sections.login') }}
                             </a>
                         </li>
-                        @elseif (auth()->check())
-                        <li class="{{ activeSubMenu('users*') }}">
-                            <a href="{{ route('users.index') }}">
-                                {{ trans('sections.users') }}
-                            </a>
-                        </li>
+
+                    @elseif (auth()->check())
+                        {{-- Solo administradores pueden ver usuarios --}}
+                        @if (auth()->user()->role === 'admin')
+                            <li class="{{ activeSubMenu('users*') }}">
+                                <a href="{{ route('users.index') }}">
+                                    {{ trans('sections.users') }}
+                                </a>
+                            </li>
+                        @endif
 
                         <li class="{{ activeSubMenu('messages*') }}">
                             <a href="{{ route('messages.index') }}">

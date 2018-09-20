@@ -1,0 +1,240 @@
+// Color de Backround
+$h_back: #333333;
+$h_logo: url("/images/logotipo.png");;
+$h_backimg: url("/images/patron1.png");;
+
+// Colores de menú activo
+$h_active: #ffffff;
+$h_activeback: #0056b3;
+$h_activeborder: orange;
+
+// Colores de menú inactivo
+$h_inactive: #ffffff;
+$h_inactiveback: #0056b3;
+$h_inactiveborder: #0069D9;
+
+/*******************************************
+               Header General
+********************************************/
+
+#boxheader {
+  margin: 10px 0;
+}
+
+header {
+  background-color: $h_back;
+  background-image: $h_backimg;
+}
+
+/*******************************************
+            Selector de idiomas
+********************************************/
+
+
+/*******************************************
+                  Logotipo
+********************************************/
+#boxlogo {
+  text-align: center;
+}
+
+#logotipo {
+  padding: 5px;
+}
+
+#logotipo > img {
+  margin: auto;
+}
+
+/*******************************************
+                  Título
+********************************************/
+#sitetitle {
+  color: $color1;
+}
+
+/*******************************************
+              Menú de navegación
+********************************************/
+.menuActive {
+  font-weight: bold;
+  color: $h_active;
+  background-color: $h_activeback;
+  border-bottom: 3px solid $h_activeborder;
+}
+
+.menuInactive {
+  font-weight: bold;
+  color: $h_inactive;
+  background-color: $h_inactiveback;
+  border-bottom: 3px solid $h_inactiveborder;
+}
+
+/*******************************************
+              Submenú de navegación
+********************************************/
+.subMenuActive {
+  font-weight: bold;
+  color: $h_active;
+  background-color: $h_activeback;
+  border-bottom: 3px solid $h_activeborder;
+}
+
+.subMenuInactive {
+  font-weight: bold;
+}
+
+/*******************************************
+              Navegación
+********************************************/
+header nav ul li a {
+  display: block;
+  padding: 10px;
+  color: $color1;
+  font-weight: bold;
+  text-align: center;
+  background: rgb(0, 86, 179);
+  text-shadow: 1px 1px 2px #000;
+  border-bottom: 3px solid #0069d9;
+}
+
+#btnMovil span {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px;
+  background: silver;
+  cursor: pointer;
+}
+
+/*********************************************
+        ESCRITORIO GRANDE - LARGE (lg)
+**********************************************/
+
+@media(min-width:1200px) {
+
+  .col-lg-12{width:100%;}
+  .col-lg-11{width:91.66666667%;}
+  .col-lg-10{width:83.33333333%;}
+  .col-lg-9{width:75%;}
+  .col-lg-8{width:66.66666667%;}
+  .col-lg-7{width:58.33333333%;}
+  .col-lg-6{width:50%;}
+  .col-lg-5{width:41.66666667%;}
+  .col-lg-4{width: 33.33333333%;}
+  .col-lg-3{width: 25%;}
+  .col-lg-2 {width: 16.66666667%;}
+  .col-lg-1 {width: 8.33333333%;}
+  .col-lg-0{display:none;}
+
+  header nav ul li a {
+    margin:30% 5px;
+    font-size:14px;
+  }
+
+  #logotipo > img {
+    width: 140px;
+  }
+
+  #sitetitle {
+    margin-top: 60px;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+/*********************************************
+   ESCRITORIO MEDIANO - MEDIUM (md) - 1024px
+**********************************************/
+@media(max-width:1199px) and (min-width:992px) {
+
+  .col-md-12{width:100%;}
+  .col-md-11{width:91.66666667%;}
+  .col-md-10{width:83.33333333%;}
+  .col-md-9{width:75%;}
+  .col-md-8{width:66.66666667%;}
+  .col-md-7{width:58.33333333%;}
+  .col-md-6{width:50%;}
+  .col-md-5{width:41.66666667%;}
+  .col-md-4{width: 33.33333333%;}
+  .col-md-3{width: 25%;}
+  .col-md-2{width: 16.66666667%;}
+  .col-md-1{width: 8.33333333%;}
+  .col-md-0{display:none;}
+
+  header nav ul li a {
+    margin:30% 5px;
+    font-size:12px;
+  }
+
+  #logotipo > img {
+    width: 140px;
+  }
+
+  #sitetitle {
+    margin-top: 50px;
+    font-size: 1.4em;
+  }
+}
+
+/**********************************************
+    PANTALLA DE TABLET - SMALL (sm) - 768px
+**********************************************/
+@media(max-width:991px) and (min-width:768px) {
+
+  .col-sm-12{width:100%;}
+  .col-sm-11{width:91.66666667%;}
+  .col-sm-10{width:83.33333333%;}
+  .col-sm-9{width:75%;}
+  .col-sm-8{width:66.66666667%;}
+  .col-sm-7{width:58.33333333%;}
+  .col-sm-6{width:50%;}
+  .col-sm-5{width:41.66666667%;}
+  .col-sm-4{width: 33.33333333%;}
+  .col-sm-3{width: 25%;}
+  .col-sm-2{width: 16.66666667%;}
+  .col-sm-1{width: 8.33333333%;}
+  .col-sm-0{display:none;}
+
+  header nav ul li a {
+    padding: 5px;
+    margin: 6px 0;
+    font-size: 16px;
+  }
+
+  #logotipo > img {
+    width: 80px;
+  }
+
+  #sitetitle {
+    font-size: 1.2em;
+  }
+}
+
+/**********************************************
+ EXTRA SMALL (xs) - Horizontal 480px y Vertical 320px
+**********************************************/
+@media(max-width:767px){
+
+  .col-xs-12{width:100%;}
+  .col-xs-11{width:91.66666667%;}
+  .col-xs-10{width:83.33333333%;}
+  .col-xs-9{width:75%;}
+  .col-xs-8{width:66.66666667%;}
+  .col-xs-7{width:58.33333333%;}
+  .col-xs-6{width:50%;}
+  .col-xs-5{width:41.66666667%;}
+  .col-xs-4{width: 33.33333333%;}
+  .col-xs-3{width: 25%;}
+  .col-xs-2{width: 16.66666667%;}
+  .col-xs-1{width: 8.33333333%;}
+  .col-xs-0{display:none;}
+
+  header nav ul li a {
+    margin:0px;
+    font-size:14px;
+    border-bottom:1px solid #444;
+  }
+}

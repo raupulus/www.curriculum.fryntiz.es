@@ -1,0 +1,78 @@
+/* Hoja con estilos en general */
+
+* {
+  margin:0px;
+  padding:0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: $GeneralBackground;
+}
+
+#generalbox {
+  margin: auto;
+  max-width: 1200px;
+}
+
+/*******************************************
+                Formularios
+********************************************/
+.formError {
+  color: #ff0000;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+/*******************************************
+          Redefiniendo bootstrap
+********************************************/
+.content-fluid {
+  position:relative;
+  margin:auto;
+  width:100%;
+  height: auto;
+}
+
+.row {
+  position:relative;
+  margin:auto;
+  width:100%;
+  height: auto;
+  clear:both;
+  display:table;
+}
+
+[class*="col-"] {
+  float:left;
+  padding:0px;
+}
+
+/*******************************************
+              Zona de Idiomas
+********************************************/
+.boxlanguage {
+  font-weight: bold;
+  text-align: center;
+  height: 30px;
+}
+
+.boxlanguage li {
+  margin: 3px 8px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.boxlanguage li img {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}

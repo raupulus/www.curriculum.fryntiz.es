@@ -9,21 +9,12 @@ E-mail: dev@fryntiz.es
 -->
 
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="@yield('description')" />
-    <meta name="keywords" content="@yield('keywords')" />
-    <meta name="author" content="Raúl Caro Pastorino" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>@yield('title')</title>
-    <link rel="stylesheet" type="text/css" href="{{ mix('/css/app.css') }}" />
-    <script type="text/javascript" src="{{ mix('/js/beforeload.js') }}"></script>
-  </head>
+@include('layouts.head')
 
   <body>
     <div id="generalbox" class="row">
         <div id="boxheader">
-            @include('layouts.header')
+            @include('layouts.nav')
         </div>
 
         <div id="boxsidebar" class="col-lg-3 col-md-4 col-sm-12 col-xs-12">

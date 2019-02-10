@@ -7,7 +7,7 @@ Author Web: https://fryntiz.es
 E-mail: dev@fryntiz.es
 --}}
 
-@extends('layouts.template')
+@extends('layouts.app')
 
 {{-- Título de la página --}}
 @section('title', trans('titles.home'))

@@ -9,7 +9,7 @@ E-mail: dev@fryntiz.es
 -->
 
 <html lang="es">
-@include('layouts.head')
+@include('layouts.header')
 
   <body>
     <div id="generalbox" class="row">
@@ -33,6 +33,8 @@ E-mail: dev@fryntiz.es
             @include('layouts.footer')
         </div>
     </div>
+
+    @include('layouts.footer-meta')
 
     <script type="text/javascript" src="{{ mix('/js/app.js') }}"></script>
     <script type="text/javascript" src="{{ mix('/js/scripts.js') }}"></script>

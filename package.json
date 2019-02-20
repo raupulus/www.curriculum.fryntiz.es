@@ -11,14 +11,18 @@
     },
     "devDependencies": {
         "axios": "^0.17",
-        "bootstrap-sass": "^3.4.0",
+        "bootstrap-sass": "^3.4.1",
         "browser-sync": "^2.26.3",
         "browser-sync-webpack-plugin": "^2.2.2",
         "cross-env": "^5.1",
         "jquery": "^3.2",
         "laravel-mix": "^1.0",
         "lodash": "^4.17.11",
-        "vue": "^2.6.4",
-        "vue-template-compiler": "^2.6.4"
+        "vue": "^2.6.6",
+        "vue-template-compiler": "^2.6.6"
+    },
+    "dependencies": {
+        "ajv": "^6.9.1",
+        "font-awesome": "^4.7.0"
     }
 }

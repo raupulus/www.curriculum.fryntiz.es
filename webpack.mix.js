@@ -12,6 +12,7 @@ mix.js('resources/assets/js/beforeload.js', 'public/js')
    .js('resources/assets/js/app.js', 'public/js')
    .js('resources/assets/js/scripts.js', 'public/js')
    .js('node_modules/bootstrap-sass/assets/javascripts/bootstrap.js', 'public/js')
+   .sass('node_modules/font-awesome/scss/font-awesome.scss', 'public/css')
    .sass('resources/assets/sass/app.scss', 'public/css');
 
 
@@ -23,5 +24,5 @@ mix.js('resources/assets/js/beforeload.js', 'public/js')
 
 /* Activar Browser Sync para depurar y sincronizar Navegadores/Equipos */
 mix.browserSync({
-    proxy: '127.0.0.1:8000',
-})
+    proxy: '127.0.0.1:8000'
+});

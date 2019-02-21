@@ -35,8 +35,5 @@ E-mail: dev@fryntiz.es
     </div>
 
     @include('layouts.footer-meta')
-
-    <script type="text/javascript" src="{{ mix('/js/app.js') }}"></script>
-    <script type="text/javascript" src="{{ mix('/js/scripts.js') }}"></script>
   </body>
 </html>

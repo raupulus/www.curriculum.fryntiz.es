@@ -7,6 +7,8 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" type="text/css" href="{{ mix('/css/app.css') }}" />
     <script type="text/javascript" src="{{ mix('/js/beforeload.js') }}"></script>
+    <script type="text/javascript" src="{{ mix('/js/functions.js') }}"></script>
+    <script type="text/javascript" src="{{ mix('/js/header.js') }}"></script>
 
 
 

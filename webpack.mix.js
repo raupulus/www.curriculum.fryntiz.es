@@ -6,14 +6,36 @@
  * Web del autor: https://fryntiz.es
  */
 
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 mix.js('resources/assets/js/beforeload.js', 'public/js')
+   .js('resources/assets/js/afterload.js', 'public/js')
    .js('resources/assets/js/app.js', 'public/js')
-   .js('resources/assets/js/scripts.js', 'public/js')
+   .js('resources/assets/js/header.js', 'public/js')
+   .js('resources/assets/js/footer.js', 'public/js')
+   .js('resources/assets/js/functions.js', 'public/js')
    .js('node_modules/bootstrap-sass/assets/javascripts/bootstrap.js', 'public/js')
-   .sass('node_modules/font-awesome/scss/font-awesome.scss', 'public/css')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+   .sass('resources/assets/sass/app.scss', 'public/css')
+    .autoload({
+        jQuery: 'jquery',
+        $: 'jquery',
+        jquery: 'jquery',
+        Popper: 'popper.js'
+    });
+
+/*
+mix.js('resources/assets/js/beforeload.js', 'public/js')
+.webpackConfig({
+    plugins:[
+        new webpack.ProvidePlugin({
+            $:'jquery',
+            jQuery:'jquery',
+            'window.jQuery':'jquery',
+            Popper:'popper.js'
+        })
+    ]
+});
+*/
 
 
 //mix.copy('node_modules/foo/bar.css', 'public/css/bar.css');

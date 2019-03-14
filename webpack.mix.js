@@ -22,6 +22,11 @@ mix.js('resources/assets/js/beforeload.js', 'public/js')
    .js('node_modules/get-size/get-size.js', 'public/js')
    .js('node_modules/images-loaded/dist/index.js', 'public/js/images-loaded.js')
    .js('node_modules/images-loaded/dist/index.es.js', 'public/js/images-loaded.es.js')
+   .js('node_modules/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js', 'public/js')
+   .js('node_modules/magnific-popup/dist/jquery.magnific-popup.js', 'public/js')
+   .js('node_modules/masonry.js/dist/masonry.pkgd.js', 'public/js')
+   .js('node_modules/owl-carousel/owl-carousel/owl.carousel.js', 'public/js')
+   .js('node_modules/outlayer/outlayer.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css')
     .autoload({
         jQuery: 'jquery',

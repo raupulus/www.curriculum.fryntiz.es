@@ -15,6 +15,13 @@ mix.js('resources/assets/js/beforeload.js', 'public/js')
    .js('resources/assets/js/footer.js', 'public/js')
    .js('resources/assets/js/functions.js', 'public/js')
    .js('node_modules/bootstrap-sass/assets/javascripts/bootstrap.js', 'public/js')
+   .js('node_modules/desandro-matches-selector/matches-selector.js', 'public/js')
+   .js('node_modules/ev-emitter/ev-emitter.js', 'public/js')
+   .js('node_modules/fizzy-ui-utils/utils.js', 'public/js')
+   .js('node_modules/flexslider/jquery.flexslider.js', 'public/js')
+   .js('node_modules/get-size/get-size.js', 'public/js')
+   .js('node_modules/images-loaded/dist/index.js', 'public/js/images-loaded.js')
+   .js('node_modules/images-loaded/dist/index.es.js', 'public/js/images-loaded.es.js')
    .sass('resources/assets/sass/app.scss', 'public/css')
     .autoload({
         jQuery: 'jquery',

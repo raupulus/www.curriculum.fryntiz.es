@@ -8,13 +8,22 @@
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
-@import "resources/assets/sass/styles.scss";
+@import "styles.scss";
 
-@import "resources/assets/sass/footer.scss";
+@import "footer.scss";
 
-@import "resources/assets/sass/header.scss";
+@import "header.scss";
 
-@import "resources/assets/sass/sidebar.scss";
+@import "sidebar.scss";
 
 // Font Awesome
 @import "~font-awesome/scss/font-awesome.scss";
+
+// Animate.css
+@import "~animate.css";
+
+// et-line 100 free fonts
+@import "~et-line";
+
+// Flexslider
+@import "~flexslider/flexslider.css";

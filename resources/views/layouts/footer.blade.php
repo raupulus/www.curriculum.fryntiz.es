@@ -51,4 +51,6 @@ E-mail: dev@fryntiz.es
 </footer>
 
 {{-- Botón para subir --}}
-<div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+<div class="scroll-up">
+    <a href="#totop"><i class="fa fa-angle-double-up"></i></a>
+</div>

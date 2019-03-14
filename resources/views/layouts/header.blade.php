@@ -10,6 +10,8 @@
     <script type="text/javascript" src="{{ mix('/js/functions.js') }}"></script>
     <script type="text/javascript" src="{{ mix('/js/header.js') }}"></script>
 
+    {{-- CSS --}}
+
 
 
     <!--

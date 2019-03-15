@@ -34,9 +34,16 @@
         "images-loaded": "^1.0.0",
         "isotope": "^1.0.0-alpha.3",
         "jquery.mb.ytplayer": "^3.2.9",
+        "jquery.simple-text-rotator": "0.0.1",
         "magnific-popup": "^1.1.0",
         "masonry.js": "^3.1.5",
         "outlayer": "^2.1.1",
-        "owl-carousel": "^1.0.0"
+        "owl-carousel": "^1.0.0",
+        "prettify": "^0.1.7",
+        "skrollr": "^0.6.26",
+        "smoothscroll-for-websites": "^1.4.8",
+        "uninstall": "0.0.0",
+        "wow": "0.0.6",
+        "wowjs": "^1.1.3"
     }
 }

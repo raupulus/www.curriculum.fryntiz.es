@@ -9,10 +9,9 @@
     <script type="text/javascript" src="{{ mix('/js/beforeload.js') }}"></script>
     <script type="text/javascript" src="{{ mix('/js/functions.js') }}"></script>
     <script type="text/javascript" src="{{ mix('/js/header.js') }}"></script>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     {{-- CSS --}}
-
-
 
     <!--
     Favicons

@@ -12,7 +12,7 @@ E-mail: dev@fryntiz.es
 @include('layouts.header')
 
   <body>
-    <div id="generalbox" class="row">
+    <div id="app" class="row">
         <div id="boxheader">
             @include('layouts.nav')
         </div>

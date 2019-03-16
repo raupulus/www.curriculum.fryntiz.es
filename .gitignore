@@ -18,3 +18,9 @@ yarn-error.log
 .env
 /composer.lock
 /package-lock.json
+/storage/debugbar/
+.phpstorm.meta.php
+_ide_helper.php
+/hooks/
+/public/images/vendor/
+
